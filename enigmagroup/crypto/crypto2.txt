@@ -1,0 +1,3 @@
+echo 
+VGhpcyBvbmUgd2FzIGJhc2U2NC4gSXQncyBhIGxpdHRsZSBoYXJkZXIgdGhhbiB0aGUgcHJldmlvdXMgbWlzc2lvbi4gVGhlID09IG9wZXJhdG9ycyBnaXZlIGJhc2U2NCBhd2F5Lg== 
+| base64 -d
