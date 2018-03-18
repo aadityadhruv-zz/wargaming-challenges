@@ -1,0 +1,8 @@
+Task on root-me: https://www.root-me.org/en/Challenges/Web-Server/File-upload-null-byte
+Video solution: https://youtu.be/Q8MpcKPoegw
+
+For this task we need BurpSuite. Create/Download php webshell, uploader script or other 
+script. Add .jpg .gif .png in the end of file, because only this extensions accepted. Run 
+BurpSuite with interception on and add null byte (%00) before .jpg. You upload your 
+script, now follow the link aaaaand nothing. Remove %00.jpg from address bar and voila, 
+THE SHELL :D

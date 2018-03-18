@@ -1,0 +1,7 @@
+Task on root-me: https://www.root-me.org/en/Challenges/Web-Server/Command-injection
+Video Solution: https://youtu.be/Q8MpcKPoegw
+
+The flag is on the index.php, so we must read source of index.php
+All input in ping form evaluate to bash shell, and we can just write what we want like 
+in bash shell. Except first arg must be ip or other strings, because source look like 
+this:  shell_exec("ping -c 3 ".ip) 
