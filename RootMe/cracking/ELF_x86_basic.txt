@@ -1,0 +1,7 @@
+Task on RootMe: https://www.root-me.org/en/Challenges/Cracking/ELF-Basic
+Video Solution: https://youtu.be/qlA1A4d2ZrM
+
+In this task you can use strings with grep or less commang.
+   $ strings ch2.bin | grep username -B 8
+With grep command we search for text "username" and with -B 8 we can see eight strings before this text. 
+   

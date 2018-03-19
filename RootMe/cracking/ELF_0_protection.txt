@@ -1,0 +1,6 @@
+Task on RootMe: https://www.root-me.org/en/Challenges/Cracking/ELF-0-protection
+Video Solution: https://youtu.be/qlA1A4d2ZrM
+
+You only need strings util for this task.
+    $ strings ch1.bin
+Password will be before welcome text.
