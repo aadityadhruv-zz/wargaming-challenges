@@ -1,0 +1,6 @@
+Task on root-me: https://www.root-me.org/en/Challenges/Cryptanalysis/Pixel-Madness-86
+Video Solution: https://youtu.be/LL6kcTusXac
+
+Open rle-encoding.html and read the code.
+
+Flag: SOLUTION
