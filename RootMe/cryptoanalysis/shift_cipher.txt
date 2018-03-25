@@ -1,0 +1,9 @@
+Task on root-me: https://www.root-me.org/en/Challenges/Cryptanalysis/Shift-cipher
+Video Solution: https://youtu.be/LL6kcTusXac
+
+In this folder you found Shift_cipher.py and ch7.bin
+Just run python2 Shift_cipher.py
+
+Bravo! Tu peux valider avec le pass Yolaihu
+
+# Flag = Yolaihu
