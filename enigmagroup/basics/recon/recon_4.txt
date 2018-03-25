@@ -1,0 +1,11 @@
+Set the PHP session cookie to be NULL
+
+javascript:void(document.cookie="PHPSESSID=");
+
+This gives an error which like the last challenge shows you a config dir
+
+Visit http://www.enigmagroup.org/missions/basics/recon/4/2stac/ and click on config.inc which has a hash in it
+
+8de1167ae6772b6bb675928de028f9d6 MD5: biatchz
+
+Then visit http://www.enigmagroup.org/missions/basics/recon/4/admin.php to enter the password

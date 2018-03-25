@@ -1,0 +1,9 @@
+just look at the response headers to the page
+
+there is a header called Password
+
+OGVkMmFm=
+
+base64 decode this
+
+8ed2af

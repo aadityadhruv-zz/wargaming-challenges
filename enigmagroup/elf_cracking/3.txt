@@ -1,0 +1,5 @@
+you're supposed to change an output color
+
+just run strings
+
+password is Antsy

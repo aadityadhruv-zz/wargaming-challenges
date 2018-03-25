@@ -1,0 +1,4 @@
+Allows for SQL injection, obviously
+
+admin
+' or 1=1 --

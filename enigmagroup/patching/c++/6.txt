@@ -1,0 +1,4 @@
+line 7
+int WriteToArray(int* array, int iSize, unsigned int Index, int iData)
+
+an extremely dumb way to do it

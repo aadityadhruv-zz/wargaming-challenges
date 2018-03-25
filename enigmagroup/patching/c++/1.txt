@@ -1,0 +1,5 @@
+line 9 
+
+strncpy(Buffer,argv[1],9);
+
+9 to allow one for null byte

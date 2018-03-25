@@ -1,0 +1,7 @@
+Download the applet2.class file
+
+Upload to java decompiler
+
+At the bottom it has convoluted way of constructing password from substrings
+
+Answer is 'IJKRhjwB_212vfUKyhnHe8k0'

@@ -1,0 +1,30 @@
+create a user on the site
+thaweatherman
+poop
+
+you will then have a cookie called Usr
+change it to be JulianaTheory
+
+go to the Deface My Site page and click on JulianaTheory's name to pull up his/her profile
+has a Cookie field: usr=JulianaTheory; SessId=a53201d5839970946e73d8aac21f8877
+ip: 66.172.230.78
+
+now go back and edit the SessId cookie to be that value
+refresh the page and there will be a link to Administration on the far right
+click it and it wants you to log in
+it says to try brute force
+directory is sekretadminar3a
+
+write up a bruter against two character lower case password
+
+the password is pi
+
+now you can see a UserDB
+it has a lot of yummy hashes in it
+ZedX's hash and corresponding password is 604288c079d95a3f3fcae36867ff825c : easyas
+login as ZedX and go to Administration
+
+click on the (in)secure shell
+enter rm -rf /
+
+you win

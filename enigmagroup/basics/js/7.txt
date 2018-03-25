@@ -1,0 +1,4 @@
+lines 72 to 87 contain an array of A-Za-z0-9 and the password it wants is 7 chars separated by _
+just enter the code into console to save yourself some hassle
+
+password is J_o_i_n_s_I_t

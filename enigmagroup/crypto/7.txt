@@ -1,0 +1,8 @@
+run solve_7.py
+run the result through a rot13 solver (http://rot13.com/index.php)
+you get Y0RkcGggdmNiaCBpZXNrbWg=
+base64 decode that and you get cDdph vcbh ieskmh
+it's a vigenere cipher
+http://rumkin.com/tools/cipher/vigenere.php
+password is cipher
+answer is aVoid eats babies

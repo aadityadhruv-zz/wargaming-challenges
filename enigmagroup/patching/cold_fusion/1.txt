@@ -1,0 +1,4 @@
+line 4
+WHERE PageID = <cfqueryparam value = "#Url.PageID#" CFSQLType = "cf_sql_integer">
+
+don't forget the quotes around the value!

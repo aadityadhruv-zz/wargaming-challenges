@@ -1,0 +1,5 @@
+what divided by what puts you out of the range [INT_MIN, INT_MAX]?
+INT_MIN / -1
+
+line 12
+if(iSecondNum == 0 || iFirstNum == INT_MIN && iSecondNUM == -1)

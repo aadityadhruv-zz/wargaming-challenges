@@ -1,0 +1,11 @@
+this one i actually had to crack
+
+load it up in GDB
+set a breakpoint at the function _Z16validateSoftwareiRSs
+just step through til right before it returns (it will take a good 100+ ni calls)
+right before it returns do
+set $rax = 1
+then just continue and it gives the answer
+
+
+password is N0T50h4rdz0rz

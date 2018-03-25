@@ -1,0 +1,6 @@
+going to robots.txt in the basics/pre/3/ directory shows a disallow on /f0rk/
+
+go there and there is a config.inc file
+
+$username = "admin";
+$password = "f0rkblork";

@@ -1,0 +1,5 @@
+it wants you to find an address of the password variable
+
+but again, just run strings
+
+password is KingTux

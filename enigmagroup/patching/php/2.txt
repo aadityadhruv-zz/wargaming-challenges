@@ -1,0 +1,2 @@
+line 10
+$query = mysql_query("SELECT * FROM articles WHERE id = '" . mysql_real_escape_string($_GET['id']) . "'") or die(0);

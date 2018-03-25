@@ -1,0 +1,7 @@
+page[]=admin
+
+gives error
+
+go to zomx directory
+
+play jenkins and win

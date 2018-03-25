@@ -1,0 +1,6 @@
+scroll to the middle of the source and you find a comment with KEY1324341625312666243113212535 in it
+line 64662
+
+28 long key and 28 char codes. each number in key corresponds to a position in the char code
+
+ACDCACDCACDCACDCACDCACDCACDC

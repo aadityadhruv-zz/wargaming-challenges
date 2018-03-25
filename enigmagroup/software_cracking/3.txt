@@ -1,0 +1,8 @@
+download and extract Race 6.4.4 http://www.racevb6.com/RaceEx6_4_4.zip
+
+load it up and tell it to extract App3.exe
+it will find the image
+
+answer is KevinMitnick
+
+OR load it up in VbReformer and you will find the key Debug54321 enter that and you get the same thing

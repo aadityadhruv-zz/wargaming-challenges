@@ -1,0 +1,2 @@
+Misc 2 - Exploit the server side includes (SSI) vuln. Use <!--#exec cmd="ls -l" --> in every field. Gives a list of files. can get the password from passwdfile.txt (Nf7hZgGGf). can then login through the adminCenter
+

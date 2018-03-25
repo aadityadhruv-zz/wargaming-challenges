@@ -1,0 +1,22 @@
+going to the page instantly does the pop up
+so view-source:http://www.enigmagroup.org/missions/basics/js/12/
+
+do this one the same as number 11
+
+function checkGuess(guess) {
+  pass = 1337;
+  for (i = 1; i < guess; ++i) {
+    pass += guess*i*guess;
+  }
+  if(pass == 318338237039211050000)
+    console.log("got it");
+  else if(pass > 318338237039211050000)
+    console.log("bigger");
+  else if(pass < 318338237039211050000)
+    console.log("smaller");
+}
+
+you should get 158847
+using chrome visit the page and tell it to not show pop ups on that page anymore
+open up console and paste in the code from the source, but change year to 158847
+enter it and you win

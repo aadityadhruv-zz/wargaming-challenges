@@ -1,0 +1,1 @@
+use Form Editor extension. register user "admin                           x" with any password. then login with admin:password

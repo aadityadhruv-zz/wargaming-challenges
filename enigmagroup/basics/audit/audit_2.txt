@@ -1,0 +1,3 @@
+Just checks to see if the admin cookie is set to 1
+
+Easily changed with JS in the console

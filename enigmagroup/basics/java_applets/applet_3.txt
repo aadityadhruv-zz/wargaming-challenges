@@ -1,0 +1,13 @@
+Download applet3.class and upload to decompiler
+
+Source uses specific decimal numbers and creates characters from them. All of them together is the password, which was 'EGY5*Zm@MY'.
+
+Easily done in the python console
+
+>>> password = ''
+>>> vals = [69, 71, 89, 53, 42, 90, 109, 64, 77, 89]
+>>> for val in vals:
+...     password += chr(val)
+... 
+>>> print password
+EGY5*Zm@MY

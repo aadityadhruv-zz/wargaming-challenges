@@ -1,0 +1,7 @@
+Source code pulls applet from a class file.
+
+Download class file from www.enigmagroup.org/missions/basics/java/1/applet1.class
+
+Then upload it to live java decompiler at http://jd.benow.ca/
+
+At the bottom it has the actual desired password value of 'JavaApplet'.

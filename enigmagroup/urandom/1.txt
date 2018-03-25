@@ -1,0 +1,10 @@
+look in source at very bottom and you see note.png
+download it
+
+open in image editor and start filling with white
+shows you check.exe
+
+change extension to txt
+mv check.exe check.txt
+
+cat it and you see the password is stationwagon

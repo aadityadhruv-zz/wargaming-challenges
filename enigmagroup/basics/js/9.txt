@@ -1,0 +1,3 @@
+just look through all the strings and find where a char in one string equals a char in another string
+
+beofroperon is the password

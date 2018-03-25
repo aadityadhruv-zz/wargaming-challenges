@@ -1,0 +1,2 @@
+line 45
+echo 'You are already logged in as ' . htmlspecialchars($userinfo[0]);

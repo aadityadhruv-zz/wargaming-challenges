@@ -1,0 +1,14 @@
+index.php?id=null/**/union/**/select/**/1,username,3/**/from/**/users
+this gives the username as administrator again
+
+do this injection again but with password instead of username
+you get: 6cfdca6f9633968c72a2a6e0fe2756ca
+
+this is the hash of a152e841783914146e4bcd4f39100686 which is the hash of asdfgh 
+the password is probably randomized per mission attempt, but I'm not sure
+
+submit this to the login page and you win!
+
+
+
+this page on signature evasion was helpful http://hakipedia.com/index.php/SQL_Injection#Signature_Evasion

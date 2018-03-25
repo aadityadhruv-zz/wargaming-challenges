@@ -1,0 +1,45 @@
+beautify it here: http://jsbeautifier.org/
+
+function checkPass(password) {
+    var total = 0;
+    var charlist = "abcdefghijklmnopqrstuvwxyz";
+    for (var i = 0; i < password.length; i++) {
+        var countone = password.charAt(i);
+        var counttwo = (charlist.indexOf(countone));
+        counttwo++;
+        total *= 17;
+        total += counttwo;
+    }
+    if (total == 248410397744610) {
+        setTimeout(
+            "location.replace('index.php?password=" + password + "'  )  ;  ", 0)
+    } else {
+        alert(
+            "Sorry, but the password was incorrect.");
+    }
+}
+
+paste it into console and modify it
+
+function checkPass(password) {
+    var total = 0;
+    var charlist = "abcdefghijklmnopqrstuvwxyz";
+    for (var i = 0; i < password.length; i++) {
+        var countone = password.charAt(i);
+        var counttwo = (charlist.indexOf(countone));
+        counttwo++;
+        total *= 17;
+        total += counttwo;
+    }
+    if (total == 248410397744610) {
+        console.log("got it");
+    } else if (total > 248410397744610) {
+        console.log("bigger");
+    } else if (total < 248410397744610) {
+        console.log("smaller");
+    }
+}
+
+then just try values bigger and smaller til you narrow it down
+
+fuckyouhazed works but with my method you get gdclhpdhbied

@@ -1,0 +1,3 @@
+look in the source and there is a password variable that is hex encoded
+
+password is ASCII-Chart

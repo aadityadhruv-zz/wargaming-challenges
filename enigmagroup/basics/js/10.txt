@@ -1,0 +1,14 @@
+get the char code for each of the chars in charlist
+var charlist = "BHFE8";
+for (i = 0; i < charlist.length; ++i) { console.log(charlist.charCodeAt(i)); }
+66 72 70 69 56
+
+starting from count2 = 5 and count1 = 3 multiply the char code by 5 then figure out what it is divided by 3
+var count1 = 3, count2 = 5;
+for (i = 0; i < charlist.length; ++i) { console.log( (charlist.charCodeAt(i)*count2)/count1 ); count1++; count2++;  }
+110 108 98 92 72
+
+String.fromCharCode(110, 108, 98, 92, 72)
+"nlb\H"
+
+and that is the password

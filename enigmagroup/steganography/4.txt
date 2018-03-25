@@ -1,0 +1,5 @@
+play with brightness and contrast for a while and you will see 7 chars in the blue area (2nd) and 7 more in the green area (3rd)
+
+concatenate them 
+
+C2Q9FP7GADPIGF

@@ -1,0 +1,5 @@
+open it in a hex editor
+you'll find the string way2easy
+enter that into the app
+
+answer is vbCritical

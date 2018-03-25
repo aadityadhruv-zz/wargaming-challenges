@@ -1,0 +1,5 @@
+In the source the about page is always off to the right while all other pages are in a nice list
+
+In about page source at the bottom between the font tags is the password "e1910a"
+
+The username is Administrator

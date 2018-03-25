@@ -1,0 +1,25 @@
+on line 53 of source it loads a JS file that is encoded
+go to http://www.greymagic.com/security/tools/decoder/decoder.asp to decode it
+you get
+
+function login( form )
+{
+	// Set the username and password variables
+	var username = form.user.value
+	var password = form.pass.value
+
+	// Check username and password. 
+	if ( ( username == String.fromCharCode( 106,111,104,110,110,121 ) ) && ( password == String.fromCharCode( 107,101,98,97,98 ) ) )
+	{
+		setTimeout( "location.replace( '"+password+".php' );", 0 );
+	}
+	else
+	{
+		alert( "You are wrong." );
+	}
+}&#65533;
+
+username is johnny
+password is kebab
+
+plug the above code into console but remove the form parameter and change username and password to what they're supposed to be. then just call the function

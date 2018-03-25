@@ -1,0 +1,5 @@
+go to http://www.enigmagroup.org/missions/basics/um/1/index.php?file=password.php
+
+it gives you administrator:bc2f95
+
+the password is bc2f95

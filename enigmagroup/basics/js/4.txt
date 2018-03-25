@@ -1,0 +1,5 @@
+notice that the url has Index.php instead of index.php
+
+view the source of www.enigmagroup.org/missions/basics/js/4/index.php
+
+password is shifted

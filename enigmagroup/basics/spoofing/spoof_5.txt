@@ -1,0 +1,2 @@
+Installed 'Edit This Cookie' extension in Chrome. 
+Changed value of authorized from 'false' to 'true'.

@@ -1,0 +1,16 @@
+Pulled up console in Chrome and viewed source. 
+
+There is a commented out section of code
+
+function writeCookie() {
+    var today = new Date();
+    var the_date = new Date("December 31, 2023");
+    var the_cookie_date = the_date.toGMTString();
+    var the_cookie = "res="+ screen.width +"x"+ screen.height;
+    var the_cookie = the_cookie + ";expires=" + the_cookie_date;
+    document.cookie=the_cookie
+    window.location = "index.php";
+}
+writeCookie();
+
+I simply changed the screen.width and screen.height to both be 1337. The page autorefreshed and that was it. 

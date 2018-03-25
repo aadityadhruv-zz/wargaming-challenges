@@ -1,0 +1,5 @@
+it tells you test is the target directory and you can see the two files in it
+
+config.php is restricted so that's the file we want to see
+
+test%0d%0acat test/config.php

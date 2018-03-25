@@ -1,0 +1,6 @@
+Gives code which is vulnerable because of how it sets the form action to $_SERVER['PHP_SELF']
+
+So if we go to http://www.enigmagroup.org/missions/basics/auditing/1/index.php/%22%3E%3Cscript%3Ealert(%E2%80%98xss%20attack%E2%80%99)%3C/script%3E%3Cbr%20class=%22irrelevant 
+we get points
+
+See the discussion here: http://seancoates.com/blogs/xss-woes

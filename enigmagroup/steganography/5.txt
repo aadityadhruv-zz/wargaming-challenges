@@ -1,0 +1,10 @@
+at the very end notice the string 8kk9?=j1k8n9j>i0
+
+you will find an article that tells you the program used to do the steg is called Steganography and is made by Pipisoft, who no longer exists
+
+http://www.flashfavorite.com/ has a download for OurSecret which is new version of Steganography apparently
+
+run that and it should separate it out
+there will be a file called w00t.txt
+
+You got it!! The password is 'omfgbbq!'

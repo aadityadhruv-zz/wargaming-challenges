@@ -1,0 +1,5 @@
+This uses the PHP easter eggs built into PHP
+
+Visit http://www.enigmagroup.org/missions/basics/recon/2/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000
+
+At the bottom of the displayed information we can see the version is 4.4

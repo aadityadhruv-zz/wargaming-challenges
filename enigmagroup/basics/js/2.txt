@@ -1,0 +1,3 @@
+look in the source
+
+line 58 checks if the password is skriptkid

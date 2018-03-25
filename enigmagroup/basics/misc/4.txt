@@ -1,0 +1,1 @@
+edit text box to take strings of long length. enter a buttload of A. gives hash. 5122193cb599bced5b318946ae19c70e:4c5e8d

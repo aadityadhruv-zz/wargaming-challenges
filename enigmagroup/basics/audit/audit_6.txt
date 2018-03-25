@@ -1,0 +1,9 @@
+This one is remote command execution. Very *nixy
+
+; ls
+
+Shows index.php and config.php
+
+; cat config.php
+
+Shows contents of the config and you win

@@ -1,0 +1,7 @@
+This is a full path disclosure attack as seen https://www.owasp.org/index.php/Full_Path_Disclosure
+
+Entering http://www.enigmagroup.org/missions/basics/recon/3/?page[]= spits out an error message
+
+You can then visit http://www.enigmagroup.org/missions/basics/recon/3/_config_/ which then allows you to see the config.inc file which has a MD5 hash in it.
+
+a7343b797861c3b462223805a5dc4a08 MD5: chumpy

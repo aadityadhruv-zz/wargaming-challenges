@@ -1,0 +1,2 @@
+Line 12
+cout<<"Enter phrase: "; cin.width(50); cin >> s;

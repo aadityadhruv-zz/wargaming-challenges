@@ -1,0 +1,20 @@
+look at robots.txt (since the mission description mentions google dorking)
+
+there is an unprotected admin/notes directory with a file in it
+open it and see:
+
+admins, the old password has been changed 
+for the real admin login area in
+
+ admin/real_admin_area_hidden_from_hackers_and_google
+
+it is now, 
+
+they_will_never_guess_this_pass
+
+thanks,
+~ferrywinkle
+
+login to admin/real_admin_area_hidden_from_hackers_and_google using
+ferrywinkle
+they_will_never_guess_this_pass

@@ -1,0 +1,44 @@
+notice the robots.txt
+it shows you the directory cms_admin
+
+from the root of the challenge you can access the diabolic directory
+on the status page we can see there is a mysql database
+on the security page we can see there is a login page for eguMyAdmin
+we can access diabolic/egumyadmin.php
+go into there
+
+we can only see ua_db (all the rest say nothing to see here)
+select browse on it
+Mephisto	c5d7f7061fb35c6b1f2d4d7f39352206 : 2d8336401777a1465fb168bf2743c138f4eea83977c5ad0986465c40bb2551932d8336401777a1465fb168bf2743c138
+Tyrael	f141bb5d0a12048297d7753d60f31f7a : 2d8336401777a1465fb168bf2743c138fdb4c7872023307d9d3e41d7480f4db62d8336401777a1465fb168bf2743c138
+test_mod	404d8a8814a8f31774161ec9285b6be8 : m0dth1$
+test_dev	71d957440e8e0b08087f41c977690791 : d3vth1$
+test_user	6896fedb79f65b3dd7999a1ef8634d40 : test0r123
+
+playing with these long ones you'll notice similarities between the two. it starts and ends with the same hash which is below
+
+2d8336401777a1465fb168bf2743c138 f4eea83977c5ad0986465c40bb255193 2d8336401777a1465fb168bf2743c138
+2d8336401777a1465fb168bf2743c138 fdb4c7872023307d9d3e41d7480f4db6 2d8336401777a1465fb168bf2743c138
+
+2d8336401777a1465fb168bf2743c138f4eea83977c5ad09 : diabolic
+
+they each then have a unique MD5 in the middle
+
+f4eea83977c5ad0986465c40bb255193 : 666kr@ckt@st1c666
+fdb4c7872023307d9d3e41d7480f4db6 : Thund3r$trucK
+
+you can log in to the forums with these
+
+after logging in with Mephisto notice the cookie is an MD5. it is JohnSmith hashed about 7 times
+it is the same if you are logged in as Tyrael
+
+notice a link at the bottom of the page when you are Mephisto
+it takes you to index.php?page=adm1npan3l
+so cms_admin is just a red herring
+
+you inject sql via the user agent. this part is hard as balls
+if you are on the right track it prints out 1
+pay attention to naming conventions in egumyadmin and the form for logging in
+the form gives two column names: ua_administrator and ua_password
+null union all select 1--
+null union all select 1 from ua_admin--

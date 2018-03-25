@@ -1,0 +1,5 @@
+it filters out the word script
+
+so use all caps
+
+<SCRIPT>

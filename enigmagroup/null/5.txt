@@ -1,0 +1,16 @@
+login as pat with honest1 and select remember me
+the cookie will be 1. followed by the hash of his password
+eventually i probably will find morgan's hash so this is good to know
+the hash is md5(sha1(password))
+
+the site admin name is BigBrother and notice he likes books by orwell (see the company page)
+login to /admin with BigBrother:orwell
+
+go into the search users area and search for morgan
+you get
+2	morgan	f249278d576decbcf74f8905b7071854
+login again as pat but switch the BigBrother_user cookie to 2.f249278d576decbcf74f8905b7071854 and refresh
+go into the email you see
+click forward
+
+you win

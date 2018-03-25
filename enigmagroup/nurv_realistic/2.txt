@@ -1,0 +1,14 @@
+look in cookies. you will be NurvGuest. switch the name to BillJobs
+
+access admin.php
+
+to get to the addcode page use admin.php?cat=addcode
+
+name your file /../../../index
+code is saved to pages/code/repository and .php is appended to the file
+
+submit some php code as the content and you win
+
+<?php
+echo "NURV sucks balls";
+?>

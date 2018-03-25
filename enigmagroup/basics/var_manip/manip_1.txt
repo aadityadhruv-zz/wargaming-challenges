@@ -1,0 +1,5 @@
+http://www.enigmagroup.org/missions/basics/vm/1/index.php?page=../admin/.htpasswd
+
+admin:dXWxIS6i6irN6
+
+password is dog

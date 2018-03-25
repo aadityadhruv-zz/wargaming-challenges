@@ -1,0 +1,5 @@
+the filter simply punches out ../ whenever it sees it so you can traverse back a directory using ....//
+
+if you try to access /etc/shadow it tells you to look instead for a file that stores command history
+
+http://www.enigmagroup.org/missions/basics/vm/4/?page=....//.bash_history

@@ -1,0 +1,8 @@
+Download applet4.class and upload to decompiler
+
+Has two MD5 hashes in it which are quickly decrypted using http://www.md5decrypter.co.uk/
+
+a8549033af1cda11ab2360d93ebc8764 MD5: javaroks
+fce0dfbaafd8198a734cd368b3ea4f5e MD5: 8592-4353-4882-9172-8634-2323
+
+The key is the one with all of the numbers

@@ -1,0 +1,5 @@
+It only checks MIME type (content type)
+
+Upload a php file that echoes something (nomnomnom)
+
+then in tamper data go to the post data and find the Content-Type field and change it to image/gif

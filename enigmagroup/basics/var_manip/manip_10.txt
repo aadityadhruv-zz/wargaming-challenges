@@ -1,0 +1,6 @@
+Downloaded a gif (rainbow.gif)
+
+Opened it in Gimp, went to Image -> Image Properties
+Added <?php phpinfo(); ?> as a comment and exported the new gif as a gif. 
+Change the new gif's file extension to .php
+Upload but tamper it with tamper data and just like challenge 9 go into the post and change the Content-Type to images/gif

@@ -1,0 +1,2 @@
+line 6
+printf("%s",argv[1]);

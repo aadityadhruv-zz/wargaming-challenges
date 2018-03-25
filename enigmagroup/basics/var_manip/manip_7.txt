@@ -1,0 +1,3 @@
+Create a php file that echoes something. Mine echoed nomnomnom
+
+Select your php file to upload. Then in tamper data switch the field to be myfile.php%2500.jpg
