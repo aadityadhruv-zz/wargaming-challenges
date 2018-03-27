@@ -438,7 +438,142 @@ Prerequisites:
 
 ## OverTheWire
 
-Add soon..
+Website: http://overthewire.org/wargames/
+
+### Bandit
+
+* [0]() - Done
+* [1]() - Done
+* [2]() - Done
+* [3]() - Done
+* [4]() - Done
+* [5]() - Done
+* [6]() - Done
+* [7]() - Done
+* [8]() - Done
+* [9]() - Done
+* [10]() - Done
+* [11]() - Done
+* [12]() - Done
+* [13]() - Done
+* [14]() - Done
+* [15]() - Done
+* [16]() - Done
+* [17]() - Done
+* [18]() - Done
+* [19]() - Done
+* [20]() - Done
+* [21]() - Done
+* [22]() - Done
+* [23]() - Done
+* [24]() - Done
+* [25]() - Done
+* [26]() - Done
+* [27]() - Done
+
+### Natas
+
+* [0]() - Done [Link to task](http://natas0.natas.labs.overthewire.org)
+* [1]() - Done [Link to task](http://natas1.natas.labs.overthewire.org)
+* [2]() - Done [Link to task](http://natas2.natas.labs.overthewire.org)
+* [3]() - Done [Link to task](http://natas3.natas.labs.overthewire.org)
+* [4]() - Done [Link to task](http://natas4.natas.labs.overthewire.org)
+* [5]() - Done [Link to task](http://natas5.natas.labs.overthewire.org)
+* [6]() - Done [Link to task](http://natas6.natas.labs.overthewire.org)
+* [7]() - Done [Link to task](http://natas7.natas.labs.overthewire.org)
+* [8]() - Done [Link to task](http://natas8.natas.labs.overthewire.org)
+* [9]() - Done [Link to task](http://natas9.natas.labs.overthewire.org)
+* [10]() - Done [Link to task](http://natas10.natas.labs.overthewire.org)
+* [11]() - Done [Link to task](http://natas11.natas.labs.overthewire.org)
+* [12]() - Done [Link to task](http://natas12.natas.labs.overthewire.org)
+* [13]() - Done [Link to task](http://natas13.natas.labs.overthewire.org)
+* [14]() - Done [Link to task](http://natas14.natas.labs.overthewire.org)
+* [15]() - Done [Link to task](http://natas15.natas.labs.overthewire.org)
+* [16]() - Done [Link to task](http://natas16.natas.labs.overthewire.org)
+* [17]() - Done [Link to task](http://natas17.natas.labs.overthewire.org)
+* [18]() - Done [Link to task](http://natas18.natas.labs.overthewire.org)
+* [19]() - Done [Link to task](http://natas19.natas.labs.overthewire.org)
+* [20]() - Done [Link to task](http://natas20.natas.labs.overthewire.org)
+* [21]() - Not Done [Link to task](http://natas21.natas.labs.overthewire.org)
+* [22]() - Not Done [Link to task](http://natas22.natas.labs.overthewire.org)
+* [23]() - Not Done [Link to task](http://natas23.natas.labs.overthewire.org)
+* [24]() - Not Done [Link to task](http://natas24.natas.labs.overthewire.org)
+* [25]() - Not Done [Link to task](http://natas25.natas.labs.overthewire.org)
+* [26]() - Not Done [Link to task](http://natas26.natas.labs.overthewire.org)
+* [27]() - Not Done [Link to task](http://natas27.natas.labs.overthewire.org)
+* [28]() - Not Done [Link to task](http://natas28.natas.labs.overthewire.org)
+* [29]() - Not Done [Link to task](http://natas29.natas.labs.overthewire.org)
+* [30]() - Not Done [Link to task](http://natas30.natas.labs.overthewire.org)
+* [31]() - Not Done [Link to task](http://natas31.natas.labs.overthewire.org)
+* [32]() - Not Done [Link to task](http://natas32.natas.labs.overthewire.org)
+* [33]() - Not Done [Link to task](http://natas33.natas.labs.overthewire.org)
+
+#### Leviathan
+
+* [0]() - Done
+* [1]() - Done
+* [2]() - Done
+* [3]() - Done
+* [4]() - Done
+* [5]() - Done
+* [6]() - Done
+* [7]() - Done
+
+## Enigmagroup
+
+Website: https://www.enigmagroup.org/pages/challenges
+
+### Basic
+
+#### Starter
+
+* [Basic1]() - Done [Link to task](http://challenges.enigmagroup.org/basics/pre/1/)
+* [Basic2]() - Done [Link to task](http://challenges.enigmagroup.org/basics/pre/2/)
+* [Basic3]() - Done [Link to task](http://challenges.enigmagroup.org/basics/pre/3/)
+
+#### JavaScript
+
+* [Basic4]() - Done [Link to task](http://challenges.enigmagroup.org/basics/js/1/)
+* [Basic5]() - Done [Link to task](http://challenges.enigmagroup.org/basics/js/2/)
+* [Basic6]() - Done [Link to task](http://challenges.enigmagroup.org/basics/js/3/)
+* [Basic7]() - Done [Link to task](http://challenges.enigmagroup.org/basics/js/4/)
+* [Basic8]() - Done [Link to task](http://challenges.enigmagroup.org/basics/js/5/)
+
+#### Spoofing
+
+* [Basic16]() - Done [Link to task](http://challenges.enigmagroup.org/basics/spoof/1/)
+* [Basic17]() - Done [Link to task](http://challenges.enigmagroup.org/basics/spoof/2/)
+
+#### SQL Injection
+
+* [Basic21]() - Done [Link to task](http://challenges.enigmagroup.org/basics/sql/1/)
+* [Basic22]() - Done [Link to task](http://challenges.enigmagroup.org/basics/sql/2/)
+
+#### URL Manipulation
+
+* [Basic27]() - Done [Link to task](http://challenges.enigmagroup.org/basics/um/1/)
+
+#### Variable Manipulation
+
+* [Basic30]() - Done [Link to task](http://challenges.enigmagroup.org/basics/vm/1/)
+* [Basic31]() - Done [Link to task](http://challenges.enigmagroup.org/basics/vm/2/)
+* [Basic32]() - Done [Link to task](http://challenges.enigmagroup.org/basics/vm/3/)
+
+#### XSS
+
+* [Basic40]() - Done [Link to task](http://challenges.enigmagroup.org/basics/xss/1/)
+* [Basic41]() - Done [Link to task](http://challenges.enigmagroup.org/basics/xss/2/)
+
+### Realistic
+
+* [Realistic One]() - Done [Link to task](http://challenges.enigmagroup.org/realistics/1/)
+* [Realistic Two]() - Done [Link to task](http://challenges.enigmagroup.org/realistics/2/)
+
+### Cryptography
+
+* [Cryptography 1]() - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/1.php)
+* [Cryptography 2]() - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/2.php)
+* [Cryptography 3]() - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/3.php)
 
 ## License
 
