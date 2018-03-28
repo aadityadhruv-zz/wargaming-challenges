@@ -442,82 +442,82 @@ Website: http://overthewire.org/wargames/
 
 ### Bandit
 
-* [0]() - Done
-* [1]() - Done
-* [2]() - Done
-* [3]() - Done
-* [4]() - Done
-* [5]() - Done
-* [6]() - Done
-* [7]() - Done
-* [8]() - Done
-* [9]() - Done
-* [10]() - Done
-* [11]() - Done
-* [12]() - Done
-* [13]() - Done
-* [14]() - Done
-* [15]() - Done
-* [16]() - Done
-* [17]() - Done
-* [18]() - Done
-* [19]() - Done
-* [20]() - Done
-* [21]() - Done
-* [22]() - Done
-* [23]() - Done
-* [24]() - Done
-* [25]() - Done
-* [26]() - Done
-* [27]() - Done
+* [0](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/0.txt) - Done
+* [1](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/1.txt) - Done
+* [2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/2.txt) - Done
+* [3](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/3.txt) - Done
+* [4](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/4.txt) - Done
+* [5](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/5.txt) - Done
+* [6](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/6.txt) - Done
+* [7](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/7.txt) - Done
+* [8](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/8.txt) - Done
+* [9](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/9.txt) - Done
+* [10](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/10.txt) - Done
+* [11](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/11.txt) - Done
+* [12](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/12.txt) - Done
+* [13](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/13.txt) - Done
+* [14](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/14.txt) - Done
+* [15](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/15.txt) - Done
+* [16](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/16.txt) - Done
+* [17](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/17.txt) - Done
+* [18](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/18.txt) - Done
+* [19](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/19.txt) - Done
+* [20](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/20.txt) - Done
+* [21](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/21.txt) - Done
+* [22](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/22.txt) - Done
+* [23](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/23.txt) - Done
+* [24](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/24.txt) - Done
+* [25](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/25.txt) - Done
+* [26](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/26.txt) - Done
+* [27](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/bandit/27.txt) - Done
 
 ### Natas
 
-* [0]() - Done [Link to task](http://natas0.natas.labs.overthewire.org)
-* [1]() - Done [Link to task](http://natas1.natas.labs.overthewire.org)
-* [2]() - Done [Link to task](http://natas2.natas.labs.overthewire.org)
-* [3]() - Done [Link to task](http://natas3.natas.labs.overthewire.org)
-* [4]() - Done [Link to task](http://natas4.natas.labs.overthewire.org)
-* [5]() - Done [Link to task](http://natas5.natas.labs.overthewire.org)
-* [6]() - Done [Link to task](http://natas6.natas.labs.overthewire.org)
-* [7]() - Done [Link to task](http://natas7.natas.labs.overthewire.org)
-* [8]() - Done [Link to task](http://natas8.natas.labs.overthewire.org)
-* [9]() - Done [Link to task](http://natas9.natas.labs.overthewire.org)
-* [10]() - Done [Link to task](http://natas10.natas.labs.overthewire.org)
-* [11]() - Done [Link to task](http://natas11.natas.labs.overthewire.org)
-* [12]() - Done [Link to task](http://natas12.natas.labs.overthewire.org)
-* [13]() - Done [Link to task](http://natas13.natas.labs.overthewire.org)
-* [14]() - Done [Link to task](http://natas14.natas.labs.overthewire.org)
-* [15]() - Done [Link to task](http://natas15.natas.labs.overthewire.org)
-* [16]() - Done [Link to task](http://natas16.natas.labs.overthewire.org)
-* [17]() - Done [Link to task](http://natas17.natas.labs.overthewire.org)
-* [18]() - Done [Link to task](http://natas18.natas.labs.overthewire.org)
-* [19]() - Done [Link to task](http://natas19.natas.labs.overthewire.org)
-* [20]() - Done [Link to task](http://natas20.natas.labs.overthewire.org)
-* [21]() - Not Done [Link to task](http://natas21.natas.labs.overthewire.org)
-* [22]() - Not Done [Link to task](http://natas22.natas.labs.overthewire.org)
-* [23]() - Not Done [Link to task](http://natas23.natas.labs.overthewire.org)
-* [24]() - Not Done [Link to task](http://natas24.natas.labs.overthewire.org)
-* [25]() - Not Done [Link to task](http://natas25.natas.labs.overthewire.org)
-* [26]() - Not Done [Link to task](http://natas26.natas.labs.overthewire.org)
-* [27]() - Not Done [Link to task](http://natas27.natas.labs.overthewire.org)
-* [28]() - Not Done [Link to task](http://natas28.natas.labs.overthewire.org)
-* [29]() - Not Done [Link to task](http://natas29.natas.labs.overthewire.org)
-* [30]() - Not Done [Link to task](http://natas30.natas.labs.overthewire.org)
-* [31]() - Not Done [Link to task](http://natas31.natas.labs.overthewire.org)
-* [32]() - Not Done [Link to task](http://natas32.natas.labs.overthewire.org)
-* [33]() - Not Done [Link to task](http://natas33.natas.labs.overthewire.org)
+* [0](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/0.txt) - Done [Link to task](http://natas0.natas.labs.overthewire.org)
+* [1](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/1.txt) - Done [Link to task](http://natas1.natas.labs.overthewire.org)
+* [2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/2.txt) - Done [Link to task](http://natas2.natas.labs.overthewire.org)
+* [3](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/3.txt) - Done [Link to task](http://natas3.natas.labs.overthewire.org)
+* [4](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/4.txt) - Done [Link to task](http://natas4.natas.labs.overthewire.org)
+* [5](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/5.txt) - Done [Link to task](http://natas5.natas.labs.overthewire.org)
+* [6](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/6.txt) - Done [Link to task](http://natas6.natas.labs.overthewire.org)
+* [7](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/7.txt) - Done [Link to task](http://natas7.natas.labs.overthewire.org)
+* [8](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/8.txt) - Done [Link to task](http://natas8.natas.labs.overthewire.org)
+* [9](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/9.txt) - Done [Link to task](http://natas9.natas.labs.overthewire.org)
+* [10](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/10.txt) - Done [Link to task](http://natas10.natas.labs.overthewire.org)
+* [11](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/11.txt) - Done [Link to task](http://natas11.natas.labs.overthewire.org)
+* [12](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/12.txt) - Done [Link to task](http://natas12.natas.labs.overthewire.org)
+* [13](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/13.txt) - Done [Link to task](http://natas13.natas.labs.overthewire.org)
+* [14](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/14.txt) - Done [Link to task](http://natas14.natas.labs.overthewire.org)
+* [15](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/15.txt) - Done [Link to task](http://natas15.natas.labs.overthewire.org)
+* [16](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/16.txt) - Done [Link to task](http://natas16.natas.labs.overthewire.org)
+* [17](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/17.txt) - Done [Link to task](http://natas17.natas.labs.overthewire.org)
+* [18](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/18.txt) - Done [Link to task](http://natas18.natas.labs.overthewire.org)
+* [19](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/19.txt) - Done [Link to task](http://natas19.natas.labs.overthewire.org)
+* [20](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/20.txt) - Done [Link to task](http://natas20.natas.labs.overthewire.org)
+* [21](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/21.txt) - Not Done [Link to task](http://natas21.natas.labs.overthewire.org)
+* [22](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/22.txt) - Not Done [Link to task](http://natas22.natas.labs.overthewire.org)
+* [23](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/23.txt) - Not Done [Link to task](http://natas23.natas.labs.overthewire.org)
+* [24](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/24.txt) - Not Done [Link to task](http://natas24.natas.labs.overthewire.org)
+* [25](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/25.txt) - Not Done [Link to task](http://natas25.natas.labs.overthewire.org)
+* [26](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/26.txt) - Not Done [Link to task](http://natas26.natas.labs.overthewire.org)
+* [27](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/27.txt) - Not Done [Link to task](http://natas27.natas.labs.overthewire.org)
+* [28](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/28.txt) - Not Done [Link to task](http://natas28.natas.labs.overthewire.org)
+* [29](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/29.txt) - Not Done [Link to task](http://natas29.natas.labs.overthewire.org)
+* [30](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/30.txt) - Not Done [Link to task](http://natas30.natas.labs.overthewire.org)
+* [31](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/31.txt) - Not Done [Link to task](http://natas31.natas.labs.overthewire.org)
+* [32](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/32.txt) - Not Done [Link to task](http://natas32.natas.labs.overthewire.org)
+* [33](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/natas/33.txt) - Not Done [Link to task](http://natas33.natas.labs.overthewire.org)
 
 #### Leviathan
 
-* [0]() - Done
-* [1]() - Done
-* [2]() - Done
-* [3]() - Done
-* [4]() - Done
-* [5]() - Done
-* [6]() - Done
-* [7]() - Done
+* [0](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/leviathan/0.txt) - Done
+* [1](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/leviathan/1.txt) - Done
+* [2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/leviathan/2.txt) - Done
+* [3](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/leviathan/3.txt) - Done
+* [4](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/leviathan/4.txt) - Done
+* [5](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/leviathan/5.txt) - Done
+* [6](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/leviathan/6.txt) - Done
+* [7](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/OverTheWire/leviathan/7.txt) - Done
 
 ## Enigmagroup
 
@@ -566,14 +566,14 @@ Website: https://www.enigmagroup.org/pages/challenges
 
 ### Realistic
 
-* [Realistic One]() - Done [Link to task](http://challenges.enigmagroup.org/realistics/1/)
-* [Realistic Two]() - Done [Link to task](http://challenges.enigmagroup.org/realistics/2/)
+* [Realistic One](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/enigmagroup/realist/realist_one.txt) - Done [Link to task](http://challenges.enigmagroup.org/realistics/1/)
+* [Realistic Two](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/enigmagroup/realist/realist_second.txt) - Done [Link to task](http://challenges.enigmagroup.org/realistics/2/)
 
 ### Cryptography
 
-* [Cryptography 1]() - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/1.php)
-* [Cryptography 2]() - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/2.php)
-* [Cryptography 3]() - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/3.php)
+* [Cryptography 1](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/enigmagroup/crypto/1.txt) - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/1.php)
+* [Cryptography 2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/enigmagroup/crypto/2.txt) - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/2.php)
+* [Cryptography 3](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/enigmagroup/crypto/3.txt) - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/3.php)
 
 ## License
 
