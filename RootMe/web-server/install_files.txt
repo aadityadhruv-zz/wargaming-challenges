@@ -1,0 +1,27 @@
+Video Solution: https://youtu.be/Gsv1S0_cMyI
+Task on Root-me: https://www.root-me.org/en/Challenges/Web-Server/Install-files
+
+http://challenge01.root-me.org/web-serveur/ch6/
+
+Hint : You know phpBB ?
+
+view-source:http://challenge01.root-me.org/web-serveur/ch6/
+ <!--  /web-serveur/ch6/phpbb -->
+	
+Go to this url 
+http://challenge01.root-me.org/web-serveur/ch6/phpbb
+	
+Result : Blank Page
+	
+If you know phpBB, you can find "install" phpBB directory.
+
+Default /install
+	
+http://challenge01.root-me.org/web-serveur/ch6/phpbb/install/
+In file install.php you can read flag
+	
+http://challenge01.root-me.org/web-serveur/ch6/phpbb/install/install.php
+	
+Result : Le mot de passe pour valider est : karambar
+	
+Flag : karambar
