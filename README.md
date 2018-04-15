@@ -205,7 +205,7 @@ Prerequisites:
 Train Your computer forensic expertise
 In this category you will learn methodologies, techniques and tools associated with computer forensics. You have to gather evidence to understand what actions was done on an information system.
 
-* Command & Control - level 2 - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-2)
+* [Command&Control-level 2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/forensic/command_and_control_level2.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-2)
 * Logs analysis - web attack - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Logs-analysis-web-attack)
 * Command & Control - level 5 - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-5)
 * Find the cat - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Find-the-cat)
@@ -391,13 +391,13 @@ Prerequisites:
 * HTTP Headers - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Headers)
 * HTTP verb tampering - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/HTTP-verb-tampering)
 * [Install files](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/install_files.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/Install-files)
-* Improper redirect - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/Improper-redirect)
+* [Improper redirect](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/improper-redirect.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/Improper-redirect)
 * CRLF - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/CRLF)
 * File upload - double extensions - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/File-upload-double-extensions)
 * File upload - MIME type - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/File-upload-MIME-type)
-* HTTP cookies - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/HTTP-cookies)
+* [HTTP cookies](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/HTTP-cookies.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/HTTP-cookies)
 * Directory traversal - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/Directory-traversal)
-* [File upload - null byte](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/file-upload_Null-byte.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/File-upload-null-byte)
+* [File upload - null byte](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/file-upload_Null-byte.txt) or [another solution]{https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/file-upload-null-byte.txt} - Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/File-upload-null-byte)
 * PHP assert() - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/PHP-assert)
 * PHP filters - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/PHP-filters)
 * PHP register globals - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/PHP-register-globals)
