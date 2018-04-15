@@ -1,0 +1,22 @@
+Video Solution: https://youtu.be/Gsv1S0_cMyI
+Task on Root-me: https://www.root-me.org/en/Challenges/Web-Server/File-upload-MIME-type
+http://challenge01.root-me.org/web-serveur/ch21
+	
+Your goal is to hack this photo galery by uploading PHP code. Retrieve the validation password in the file .passwd.
+
+I'm done this task by uploading uploader.php script and in upload.php upload shell.
+
+Download
+	https://raw.githubusercontent.com/RomaniukVadim/romaniukvadim.github.io/master/shell/uploader.php
+and
+	https://raw.githubusercontent.com/RomaniukVadim/romaniukvadim.github.io/master/shell/b375k.php
+Shell password: mobius
+
+At first append magic byte to uploader.php FF D8 FF DB
+rename file to uploader.php.jpg and upload uploader.php.jpg
+
+http://challenge01.root-me.org/web-serveur/ch21/?action=upload
+
+then go to uploaded uploader.php and upload b375k.php and read .passwd file
+	
+Flag : UN2YusYPnmwfHFHI5zj3

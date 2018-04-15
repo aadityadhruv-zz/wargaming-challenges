@@ -1,0 +1,24 @@
+Video Solution: https://youtu.be/Gsv1S0_cMyI
+Task on Root-me: https://www.root-me.org/en/Challenges/Web-Server/File-upload-double-extensions
+
+Your goal is to hack this photo galery by uploading PHP code.
+Retrieve the validation password in the file .passwd at the root of the application.
+
+http://challenge01.root-me.org/web-serveur/ch20/
+
+I'm done this task by uploading uploader.php script and in upload.php upload shell.
+
+Download
+	https://raw.githubusercontent.com/RomaniukVadim/romaniukvadim.github.io/master/shell/uploader.php
+and
+	https://raw.githubusercontent.com/RomaniukVadim/romaniukvadim.github.io/master/shell/b375k.php
+Shell password: mobius
+
+At first upload uploader.php with this link
+
+http://challenge01.root-me.org/web-serveur/ch20/?action=upload
+
+then go to uploaded uploader.php and upload b375k.php and read .passwd file
+
+By the way
+Flag : PV1OejHY4MxfsC2mHpRz9
