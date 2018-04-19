@@ -397,7 +397,7 @@ Prerequisites:
 * File upload - MIME type - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/File-upload-MIME-type)
 * [HTTP cookies](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/HTTP-cookies.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/HTTP-cookies)
 * Directory traversal - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/Directory-traversal)
-* [File upload - null byte](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/file-upload_Null-byte.txt) or [another solution]{https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/file-upload-null-byte.txt} - Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/File-upload-null-byte)
+* [File upload - null byte](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/file-upload_Null-byte.txt) or [another solution](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/web-server/file-upload-null-byte.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/File-upload-null-byte)
 * PHP assert() - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/PHP-assert)
 * PHP filters - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/PHP-filters)
 * PHP register globals - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Web-Server/PHP-register-globals)
