@@ -1,0 +1,31 @@
+Video Solution: https://youtu.be/pMap0brBTbY
+Task on Root-me: https://www.root-me.org/en/Challenges/Cryptanalysis/File-Insecure-storage-1
+
+http://challenge01.root-me.org/cryptanalyse/ch20/ch20.tgz
+
+Firefox Decrypt is a tool to extract passwords
+https://github.com/Unode/firefox_decrypt
+
+$ wget http://challenge01.root-me.org/cryptanalyse/ch20/ch20.tgz
+
+$ tar -zxvf ch20.tgz
+[..]
+./.mozilla/
+./.mozilla/extensions/
+./.mozilla/firefox/
+./.mozilla/firefox/profiles.ini
+./.mozilla/firefox/o0s0xxhl.default/
+[..]
+
+$ python firefox_decrypt.py .mozilla/firefox/o0s0xxhl.default/
+2018-04-16 23:09:08,327 - WARNING - profile.ini not found in ../../crypto/.mozilla/firefox/o0s0xxhl.default/
+2018-04-16 23:09:08,327 - WARNING - Continuing and assuming '../../crypto/.mozilla/firefox/o0s0xxhl.default/' is a profile location
+
+Master Password for profile .mozilla/firefox/o0s0xxhl.default/:
+2018-04-16 23:09:19,258 - WARNING - Attempting decryption with no Master Password
+
+Website:   http://www.root-me.org
+Username: 'shell1cracked'
+Password: 'F1rstP4sSw0rD'
+
+#Flag = F1rstP4sSw0rD
