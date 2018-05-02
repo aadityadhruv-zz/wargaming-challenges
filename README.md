@@ -208,7 +208,7 @@ In this category you will learn methodologies, techniques and tools associated w
 * [Command&Control-level 2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/forensic/command_and_control_level2.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-2)
 * Logs analysis - web attack - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Logs-analysis-web-attack)
 * Command & Control - level 5 - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-5)
-* Find the cat - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Find-the-cat)
+* [Find the cat](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/forensic/find_the_cat.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Find-the-cat)
 * Ugly Duckling - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Ugly-Duckling)
 * Active Directory - GPO - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Active-Directory-GPO)
 * Command & Control - level 3 - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-3)
