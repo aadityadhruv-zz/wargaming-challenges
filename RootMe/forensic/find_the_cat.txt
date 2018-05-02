@@ -1,0 +1,65 @@
+Video Solution: https://youtu.be/Lck6kHSk79o
+Task on RootMe: https://www.root-me.org/en/Challenges/Forensic/Find-the-cat
+
+! You need SleuthKit for this task !
+
+Download file for this task
+
+λ  ~/Forensic wget http://challenge01.root-me.org/forensic/ch9/ch9.gz
+
+Unzip .gz archive
+
+λ  ~/Forensic gzip -d ch9.gz
+λ  ~/Forensic  file ch9 
+ch9: DOS/MBR boot sector; partition 1 : ID=0xb, start-CHS (0x0,32,33), end-CHS (0x10,81,1), startsector 2048, 260096 sectors, extended partition table (last)
+
+Now we know that ch9 is bootable image.
+"mmls" - Display the partition layout of a volume system (partition tables). From SleuthKit.
+
+λ  ~/Forensic mmls ch9
+DOS Partition Table
+Offset Sector: 0
+Units are in 512-byte sectors
+
+      Slot      Start        End          Length       Description
+000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)
+001:  -------   0000000000   0000002047   0000002048   Unallocated
+002:  000:000   0000002048   0000262143   0000260096   Win95 FAT32 (0x0b)
+
+And this image has three partitions.
+With dd command we write this partitions as separate image.
+
+λ  ~/Forensic dd if=ch9 of=ch9_1 bs=512 skip=0 count=1
+λ  ~/Forensic dd if=ch9 of=ch9_2 bs=512 skip=0 count=2048
+λ  ~/Forensic dd if=ch9 of=ch9_3 bs=512 skip=2048 count=260096
+λ  ~/Forensic  file ch9_*
+ch9_1: DOS/MBR boot sector, extended partition table (last)
+ch9_2: DOS/MBR boot sector; partition 1 : ID=0xb, start-CHS (0x0,32,33), end-CHS (0x10,81,1), startsector 2048, 260096 sectors, extended partition table (last)
+ch9_3: DOS/MBR boot sector, code offset 0x58+2, OEM-ID "mkdosfs", Media descriptor 0xf8, sectors/track 32, heads 64, sectors 260096 (volumes > 32 MB), FAT (32 bit), sectors/FAT 2001, serial number 0x9b43a85d, label: "
+
+We need ch9_3, now mount ch9_3 image
+
+λ  ~/Forensic  sudo mount ch9_3 /mnt/disk
+λ  ~/Forensic  ls /mnt/disk
+Documentations  Files  WebSites
+λ  ~/Forensic  ls /mnt/disk/Documentations 
+ Barbey_Cigognes_BDC.pdf        Courba13-01.pdf               mangeur-de-cigogne.pdf   m-flamm.pdf                                  texte_migration_des_cigognes.pdf
+ brasserie_jo_dinner_menu.pdf  'mangeur-de-cigogne (1).pdf'  'Menu AC.pdf'             tartes_flambee_a_volonte_francais_2013.pdf
+
+All important document deleted. Unmount disk.
+
+λ  ~/Forensic  sudo umount /mnt/disk
+
+Recover deleted files with testdisk
+
+λ  ~/Forensic sudo testdisk ch9_3
+
+You need to recover file Files/revendications.odt
+Then open file, save photo with retardet cat. With exiftool you can see ALL attributes of file. We need photo location
+
+λ  ~/Forensic exiftool cat.jpg
+GPS Position             : 47 deg 36 16.15N...
+
+Google for location... It's helfrantzkirch
+
+#Flag: helfrantzkirch
