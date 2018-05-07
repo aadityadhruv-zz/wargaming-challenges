@@ -1,0 +1,8 @@
+Video Solution:
+Task on RootMe: https://www.root-me.org/en/Challenges/Steganography/Audio-stegano
+
+open ch7.wav in Sonic Visualizer
+
+Add spectrogramm layer and zoom.
+
+#Flag = secret-password

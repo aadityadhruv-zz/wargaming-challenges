@@ -1,0 +1,4 @@
+Video Solution:
+Task on RootMe: https://www.root-me.org/en/Challenges/Steganography/Squared-38
+
+open the image with a hexeditor and search for “pass” or use strings

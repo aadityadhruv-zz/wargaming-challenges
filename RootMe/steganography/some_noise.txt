@@ -1,0 +1,7 @@
+Video Solution:
+Task on RootMe:
+
+You need to start audacity and  open ch3.wav, then slow down and rewerse wav.
+And you can hear flag
+
+#Flag = 3b27641fc5h0

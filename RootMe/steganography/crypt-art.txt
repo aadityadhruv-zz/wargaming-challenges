@@ -1,0 +1,32 @@
+Video Solution: 
+Task on RootMe: https://www.root-me.org/en/Challenges/Steganography/Crypt-art
+
+file ch8.ppm
+
+ch8.ppm: Netpbm image data, size = 70 x 50, rawbits, pixmap
+
+λ  ~  strings ch8.ppm 
+70 50
+  Hi! Welcome to  
+esoteric programming!
+The encrypted pass is:  
+EPCQFBXKWURQCTXOIPMNV
+ Bienvenue a la program
+mation esoterique!
+Le pass encrypte est
+EPCQFBXKWURQCTXOIPMNV
+
+But EPCQFBXKWURQCTXOIPMNV not a flag.
+
+http://www.bertnase.de/npiet/npiet-execute.php
+
+https://cryptii.com/vigenere-cipher
+
+key is EYJFRGTT
+
+Vigenere Cipher
+Then I decrypt pass
+ artloverswillneverdie
+but still wrong. It must be uppercase, don't know why.
+
+#Flag = ARTLOVERSWILLNEVERDIE

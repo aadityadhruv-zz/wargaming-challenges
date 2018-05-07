@@ -1,0 +1,7 @@
+Video Solution:
+Task on RootMe: https://www.root-me.org/en/Challenges/Steganography/We-need-to-go-deeper
+
+binwalk ch10.jpg 
+dd if=ch10.jpg of=out.jpg skip=404 bs=1
+
+#Flag = B33r1sG00d!
