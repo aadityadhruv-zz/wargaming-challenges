@@ -1,5 +1,5 @@
-Video Solution:
-Task on RootMe:
+Video Solution: https://youtu.be/OK_Ss4FCrus
+Task on RootMe: https://www.root-me.org/en/Challenges/Steganography/Some-noise-40
 
 You need to start audacity and  open ch3.wav, then slow down and rewerse wav.
 And you can hear flag

@@ -1,4 +1,4 @@
-Video Solution:
+Video Solution: https://youtu.be/XFhnbfbin5c
 Task on RootMe: https://www.root-me.org/en/Challenges/Steganography/Audio-stegano
 
 open ch7.wav in Sonic Visualizer
