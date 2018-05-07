@@ -319,22 +319,22 @@ The challenges are complete web sites with multiple security vulnerabilities, wi
 Whereas cryptography concern the art of secret, steganography is the art of hidding: the object of steganography is to hide the fact that there is an information in a document.
 ```
 
-* Gunnm - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Gunnm)
-* Squared - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Squared-38)
+* [Gunnm](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/gunnm.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Gunnm)
+* [Squared](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/Squared.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Squared-38)
 * Dot and next line - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Dot-and-next-line)
-* Steganomobile - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Steganomobile)
-* Twitter Secret Messages - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Twitter-Secret-Messages)
-* Some noise - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Some-noise-40)
+* [Steganomobile](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/steganomobile.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Steganomobile)
+* [Twitter Secret Messages](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/twitter_secret_message.txt) -  Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Twitter-Secret-Messages)
+* [Some noise](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/some_noise.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Some-noise-40)
 * George and Alfred - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/George-and-Alfred)
-* Audio stegano - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Audio-stegano)
+* [Audio stegano](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/audio-stegano.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Audio-stegano)
 * Base Jumper - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Base-Jumper)
 * PDF Object - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/PDF-Object)
-* We need to go deeper - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/We-need-to-go-deeper)
+* [We need to go deeper](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/we_need_to_go_deeper.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/We-need-to-go-deeper)
 * Angecryption - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Angecryption)
 * LSB - Uncle Scrooge - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/LSB-Uncle-Scrooge-249)
 * Pixel Indicator Technique - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Pixel-Indicator-Technique)
 * Pixel Value Differencing - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Pixel-Value-Differencing)
-* Crypt-art - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Crypt-art)
+* [Crypt-art](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/crypt-art.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Crypt-art)
 
 
 ## Web - Client (19 Challenges)
