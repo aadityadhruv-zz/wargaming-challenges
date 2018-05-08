@@ -238,15 +238,15 @@ Prerequisites:
 - Knowlege of the most common network protocols.
 ```
 
-* FTP - authentication - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/FTP-authentication)
-* TELNET - authentication - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/TELNET-authentication)
-* ETHERNET - frame - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/ETHERNET-frame)
-* Twitter authentication - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/Twitter-authentication-101)
-* CISCO - password - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/CISCO-password)
+* [FTP-authentication](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/network/ftp.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/FTP-authentication)
+* [TELNET-authentication](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/network/telnet.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/TELNET-authentication)
+* [ETHERNET-frame](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/network/ethernet.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/ETHERNET-frame)
+* [Twitter authentication](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/network/twitter.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/Twitter-authentication-101)
+* [CISCO-password](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/network/cisco.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/CISCO-password)
 * DNS - zone transfert - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/DNS-zone-transfert)
-* IP - Time To Live - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/IP-Time-To-Live)
+* [IP-Time To Live](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/network/ip.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/IP-Time-To-Live)
 * LDAP - null bind - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/LDAP-null-bind)
-* SIP - authentication - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/SIP-authentication-103)
+* [SIP-authentication](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/network/sip.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/SIP-authentication-103)
 * ETHERNET - Patched transmission - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/ETHERNET-Patched-transmission)
 * Global System Traffic for Mobile communication - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/Global-System-Traffic-for-Mobile-communication-61)
 * SSL - HTTP exchange - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Network/SSL-HTTP-exchange)
