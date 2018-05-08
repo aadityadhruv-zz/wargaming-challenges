@@ -1,0 +1,11 @@
+Video Solution: https://youtu.be/iz9sDfvoIus
+Task on RootMe: https://www.root-me.org/en/Challenges/Web-Client/Javascript-Source
+
+http://challenge01.root-me.org/web-client/ch1/ch1.html
+
+View source code
+
+if ( pass == "123456azerty" ) {
+		    alert("Mot de passe accepté, vous pouvez valider le challenge avec ce mot de passe.\nYou can validate the challenge using this password.");  }
+
+#Flag = 123456azerty

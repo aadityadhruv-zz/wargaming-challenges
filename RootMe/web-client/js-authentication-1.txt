@@ -1,0 +1,15 @@
+Video Solution: https://youtu.be/iz9sDfvoIus
+Task on RootMe: https://www.root-me.org/en/Challenges/Web-Client/Javascript-Authentication
+
+http://challenge01.root-me.org/web-client/ch9/
+
+View source 
+
+view-source:http://challenge01.root-me.org/web-client/ch9/
+
+Pass in http://challenge01.root-me.org/web-client/ch9/login.js
+
+if (pseudo=="4dm1n" && password=="sh.org") {
+	    alert("Password accepté, vous pouvez valider le challenge avec ce mot de passe.\nYou an validate the challenge using this password.");
+
+#Flag = sh.org

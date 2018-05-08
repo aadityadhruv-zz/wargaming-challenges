@@ -1,0 +1,8 @@
+Video Solution: https://youtu.be/iz9sDfvoIus
+Task on RootMe: https://www.root-me.org/en/Challenges/Web-Client/HTML-disabled-buttons
+
+http://challenge01.root-me.org/web-client/ch25/
+
+Inspect in Chrome, remove disabled from input. Click on button.
+
+#Flag = HTMLCantStopYou

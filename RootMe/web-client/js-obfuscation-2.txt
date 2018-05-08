@@ -1,0 +1,20 @@
+Video Solution: https://youtu.be/XpenaNfM0hQ
+Task on RootMe: https://www.root-me.org/en/Challenges/Web-Client/Javascript-Obfuscation-2
+
+view-source:http://challenge01.root-me.org/web-client/ch12/ch12.html
+
+var pass = unescape("unescape%28%22String.fromCharCode%2528104%252C68%252C117%252C102%252C106%252C100%252C107%252C105%252C49%252C53%252C54%2529%22%29");
+
+Decode js unescape http://www.utilities-online.info/urlencode/
+
+unescape%28%22String.fromCharCode%2528104%252C68%252C117%252C102%252C106%252C100%252C107%252C105%252C49%252C53%252C54%2529%22%29 > unescape("String.fromCharCode%28104%2C68%2C117%2C102%2C106%2C100%2C107%2C105%2C49%2C53%2C54%29")
+
+Then in chrome hackbar url decode
+
+String.fromCharCode%28104%2C68%2C117%2C102%2C106%2C100%2C107%2C105%2C49%2C53%2C54%29 > String.fromCharCode(104%2C68%2C117%2C102%2C106%2C100%2C107%2C105%2C49%2C53%2C54)
+
+Then we need to decode string fromCharCode http://jdstiles.com/java/cct.html
+
+104, 68, 117, 102, 106, 100, 107, 105, 49, 53, 54 > hDufjdki156
+
+#Flag = hDufjdki156
