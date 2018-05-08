@@ -287,7 +287,7 @@ You will end up in environments full of diverse and varied themes. These challen
 The challenges are complete web sites with multiple security vulnerabilities, with a completely fictional content. You play the role of a hacker contacted by organizations or individuals in order to provide justice through a hack. Once received your goals, it’s up to you to browse the site by trying to discover and exploit vulnerabilities. This series of challenges can be directly applied to the real world.
 
 
-* It happens, sometimes - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Realist/It-happens-sometimes-93)
+* [It happens, sometimes](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/realist/it_happens_sometimes.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Realist/It-happens-sometimes-93)
 * P0wn3d - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Realist/P0wn3d)
 * The h@ckers l4b - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Realist/The-h-ckers-l4b)
 * Néonazi inside - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Realist/Neonazi-inside-52)
