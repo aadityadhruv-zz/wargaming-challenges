@@ -1,0 +1,15 @@
+Video Solution: https://youtu.be/HEjP3V28dLI
+Task on RootMe: https://www.root-me.org/en/Challenges/Realist/It-happens-sometimes-93
+
+http://challenge01.root-me.org/realiste/ch3/
+
+Open terminal and brute all files on /
+$ dirb http://challenge01.root-me.org/realiste/ch3/ /usr/share/dict/dirb-wordlists/small.txt
+
+Find admin page http://challenge01.root-me.org/realiste/ch3/admin
+Then open burpsuite and firefox, go to proxy > intercept
+Intercept request to challenge01 and change method GET to PUT
+
+Mot de passe / password : 0010110111101001
+
+#Flag = 0010110111101001
