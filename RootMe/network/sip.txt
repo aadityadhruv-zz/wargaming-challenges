@@ -1,0 +1,6 @@
+Video Solution: https://youtu.be/KhbXAIK6tkg
+Task on RootMe: https://www.root-me.org/en/Challenges/Network/SIP-authentication-103
+
+http://challenge01.root-me.org/reseau/ch4/ch4.txt
+Password in plain text
+#Flag = 1234

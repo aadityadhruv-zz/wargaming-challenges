@@ -1,0 +1,16 @@
+Video Solution: https://youtu.be/KhbXAIK6tkg
+Task on RootMe: https://www.root-me.org/en/Challenges/Network/CISCO-password
+
+http://challenge01.root-me.org/reseau/ch15/ch15.txt
+
+secret 5 very secure and hard to bruteforce or crack. But secret 7 easy to crack.
+Open http://ibeast.com/tools/CiscoPassword/index.asp and paste cisco7 password
+
+6sK0_hub
+6sK0_console
+6sK0_admin
+6sK0_guest
+
+Prefix always the same, let's try 6sK0_enable
+
+#Flag = 6sK0_enable

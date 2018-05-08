@@ -1,0 +1,6 @@
+Video Solution: https://youtu.be/Tv4W0Fw2YU0
+Task on RootMe: https://www.root-me.org/en/Challenges/Network/Twitter-authentication-101
+
+Open ch3.pcap in wireshark.
+
+#Flag = password

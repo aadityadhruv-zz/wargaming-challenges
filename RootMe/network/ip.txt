@@ -1,0 +1,8 @@
+Video Solution: https://youtu.be/KhbXAIK6tkg
+Task on RootMe: https://www.root-me.org/en/Challenges/Network/IP-Time-To-Live
+
+Open ch7.pcap in wireshark
+It's usual traceroute command packets.
+TTL used to reach the targeted host in this ICMP exchange == 13
+
+#Flag = 13

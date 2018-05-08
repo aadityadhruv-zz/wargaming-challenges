@@ -1,0 +1,7 @@
+Video Solution: https://youtu.be/Tv4W0Fw2YU0
+Task on RootMe: https://www.root-me.org/en/Challenges/Network/FTP-authentication
+
+Open ch1.pcap in wireshark.
+Search for frame 11, FTP > PASS > cdts3500
+
+#Flag = cdts3500

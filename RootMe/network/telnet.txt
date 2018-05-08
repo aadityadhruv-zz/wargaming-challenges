@@ -1,0 +1,6 @@
+Video Solution: https://youtu.be/Tv4W0Fw2YU0
+Task on RootMe: https://www.root-me.org/en/Challenges/Network/TELNET-authentication
+
+Open ch2.pcap in wireshark. Follow UDP stream > password: user
+
+#Flag = user
