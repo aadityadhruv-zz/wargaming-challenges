@@ -1,0 +1,10 @@
+Video Solution: https://youtu.be/yfrk9I9Q4_E
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit11.html
+
+The password for the next level is stored in the file data.txt, which contains base64 encoded data
+
+bandit10@bandit:~$ cat data.txt 
+VGhlIHBhc3N3b3JkIGlzIElGdWt3S0dzRlc4TU9xM0lSRnFyeEUxaHhUTkViVVBSCg==
+bandit10@bandit:~$ base64 -d data.txt 
+The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+bandit10@bandit:~$ ssh bandit11@localhost

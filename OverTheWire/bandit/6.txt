@@ -1,0 +1,15 @@
+Video Solution: https://youtu.be/1f8p14UCVXM
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit6.html
+
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+
+human-readable
+1033 bytes in size
+not executable
+
+bandit5@bandit:~$ find ./ -type f -size 1033c 
+./inhere/maybehere07/.file2
+bandit5@bandit:~$ cat ./inhere/maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+bandit5@bandit:~$ ssh bandit6@localhost
+

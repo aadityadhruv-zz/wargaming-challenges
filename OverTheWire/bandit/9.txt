@@ -1,0 +1,8 @@
+Video Solution: https://youtu.be/yfrk9I9Q4_E
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit9.html
+
+The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+
+bandit8@bandit:~$ cat data.txt | sort | uniq -u
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+bandit8@bandit:~$ ssh bandit9@localhost

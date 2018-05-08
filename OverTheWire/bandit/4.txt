@@ -1,0 +1,8 @@
+Video Solution: https://youtu.be/1f8p14UCVXM
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit4.html
+
+The password for the next level is stored in a hidden file in the inhere directory.
+
+bandit3@bandit:~$ cat inhere/.hidden 
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+bandit3@bandit:~$ ssh bandit4@localhost

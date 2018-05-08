@@ -1,0 +1,8 @@
+Video Solution: https://youtu.be/1f8p14UCVXM
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit5.html
+
+The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+
+bandit4@bandit:~$ cat inhere/-file07 
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+bandit4@bandit:~$ ssh bandit5@localhost

@@ -1,0 +1,9 @@
+Video Solution: https://youtu.be/yfrk9I9Q4_E
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit11.html
+
+The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+
+
+bandit11@bandit:~$ cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+bandit11@bandit:~$ ssh bandit12@localhost

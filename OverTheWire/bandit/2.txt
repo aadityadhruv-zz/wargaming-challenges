@@ -1,0 +1,8 @@
+Video Solution: https://youtu.be/1f8p14UCVXM
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit2.html
+
+The password for the next level is stored in a file called - located in the home directory
+
+bandit1@bandit:~$ cat ./- 
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+bandit1@bandit:~$ ssh bandit2@localhost
