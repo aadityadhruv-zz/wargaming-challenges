@@ -1,6 +1,19 @@
-Video Solution: https://youtu.be/D0ofCYITy5I
+Video Solution:  https://youtu.be/D0ofCYITy5I
 Task on Overthewire: http://overthewire.org/wargames/bandit/bandit21.html
 
-A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+There is a setuid binary in the homedirectory that does the following: it makes a connection to localhost on the port you specify as a commandline argument. It then reads a line of text from the connection and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
+
+NOTE: Try connecting to your own network daemon to see if it works as you think
+
+In first terminal
+
+bandit20@bandit:~$ nc -l 31313 < /etc/bandit_pass/bandit20
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+bandit20@bandit:~$ 
 
 
+In second terminal
+
+bandit20@bandit:~$ ./suconnect 31313 
+Read: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+Password matches, sending next password

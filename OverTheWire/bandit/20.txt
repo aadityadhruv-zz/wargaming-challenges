@@ -6,4 +6,3 @@ There is a setuid binary in the homedirectory that does the following: it makes 
 bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20
 GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 bandit19@bandit:~$ ssh bandit20@localhost
-
