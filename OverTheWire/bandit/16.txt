@@ -1,0 +1,155 @@
+Video Solution: https://youtu.be/D0ofCYITy5I
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit16.html
+
+The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption.
+
+Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof and read the “CONNECTED COMMANDS” section in the manpage. Next to ‘R’ and ‘Q’, the ‘B’ command also works in this version of that command…
+
+bandit15@bandit:~$ cat /etc/bandit_pass/bandit15 | openssl s_client -connect localhost:30001
+CONNECTED(00000003)
+depth=0 CN = bandit
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 CN = bandit
+verify return:1
+---
+Certificate chain
+ 0 s:/CN=bandit
+   i:/CN=bandit
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICsjCCAZqgAwIBAgIJAKZI1xYeoXFuMA0GCSqGSIb3DQEBCwUAMBExDzANBgNV
+BAMMBmJhbmRpdDAeFw0xNzEyMjgxMzIzNDBaFw0yNzEyMjYxMzIzNDBaMBExDzAN
+BgNVBAMMBmJhbmRpdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOcX
+ruVcnQUBeHJeNpSYayQExCJmcHzSCktnOnF/H4efWzxvLRWt5z4gYaKvTC9ixLrb
+K7a255GEaUbP/NVFpB/sn56uJc1ijz8u0hWQ3DwVe5ZrHUkNzAuvC2OeQgh2HanV
+5LwB1nmRZn90PG1puKxktMjXsGY7f9Yvx1/yVnZqu2Ev2uDA0RXij/T+hEqgDMI7
+y4ZFmuYD8z4b2kAUwj7RHh9LUKXKQlO+Pn8hchdR/4IK+Xc4+GFOin0XdQdUJaBD
+8quOUma424ejF5aB6QCSE82MmHlLBO2tzC9yKv8L8w+fUeQFECH1WfPC56GcAq3U
+IvgdjGrU/7EKN5XkONcCAwEAAaMNMAswCQYDVR0TBAIwADANBgkqhkiG9w0BAQsF
+AAOCAQEAnrOty7WAOpDGhuu0V8FqPoKNwFrqGuQCTeqhQ9LP0bFNhuH34pZ0JFsH
+L+Y/q4Um7+66mNJUFpMDykm51xLY2Y4oDNCzugy+fm5Q0EWKRwrq+hIM+5hs0RdC
+nARP+719ddmUiXF7r7IVP2gK+xqpa8+YcYnLuoXEtpKkrrQCCUiqabltU5yRMR77
+3wqB54txrB4IhwnXqpO23kTuRNrkG+JqDUkaVpvct+FAdT3PODMONP/oHII3SH9i
+ar/rI9k+4hjlg4NqOoduxX9M+iLJ0Zgj6HAg3EQVn4NHsgmuTgmknbhqTU3o4IwB
+XFnxdxVy0ImGYtvmnZDQCGivDok6jA==
+-----END CERTIFICATE-----
+subject=/CN=bandit
+issuer=/CN=bandit
+---
+No client certificate CA names sent
+---
+SSL handshake has read 1015 bytes and written 631 bytes
+---
+New, TLSv1/SSLv3, Cipher is AES128-SHA
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1
+    Cipher    : AES128-SHA
+    Session-ID: 696A8BDAB8DE52B2A1C8F9E79C5527BA1B5ADAA422FDCD3B444DB05DDA27C408
+    Session-ID-ctx: 
+    Master-Key: 106DA0FCE1F9269A4AB56E6EF32D56D3ED699CA62B0A3191BDA4CF7AA151251865938DCED6EABA04D8DBC464CE0AC702
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - 08 f0 15 a5 d6 6f a0 e8-06 d6 bb a4 0c 33 eb 04   .....o.......3..
+    0010 - e9 a8 0d ed e2 c6 64 83-66 1c 93 f9 3e d8 ea d2   ......d.f...>...
+    0020 - ec 49 79 75 c9 bc 2c 61-22 eb 8e e2 ff fe 70 4e   .Iyu..,a".....pN
+    0030 - 1c 3b c0 84 18 f2 9a da-9e 07 ab 4b 22 86 28 97   .;.........K".(.
+    0040 - 81 68 cd 22 42 b6 55 fe-db 25 b7 4f d7 e4 6f fb   .h."B.U..%.O..o.
+    0050 - 81 fe c4 38 b7 55 c8 fa-06 bb 0e 91 e5 6a 11 16   ...8.U.......j..
+    0060 - 5b 1f 66 f0 82 ee 6b ac-8a 4a 45 4b 09 58 e6 26   [.f...k..JEK.X.&
+    0070 - 8d cc 1f b4 37 0c 7f 4f-70 de de 98 f0 d4 a7 5d   ....7..Op......]
+    0080 - 6f 16 6e 5c 91 d6 ac e9-04 ac 2d d2 72 d0 39 6a   o.n\......-.r.9j
+    0090 - ca 19 04 ac a0 47 20 04-bc f6 fc 98 60 73 ae 60   .....G .....`s.`
+
+    Start Time: 1525818195
+    Timeout   : 300 (sec)
+    Verify return code: 18 (self signed certificate)
+---
+HEARTBEATING
+DONE
+bandit15@bandit:~$ cat /etc/bandit_pass/bandit15 | openssl s_client -ign_eof -connect localhost:30001
+CONNECTED(00000003)
+depth=0 CN = bandit
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 CN = bandit
+verify return:1
+---
+Certificate chain
+ 0 s:/CN=bandit
+   i:/CN=bandit
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICsjCCAZqgAwIBAgIJAKZI1xYeoXFuMA0GCSqGSIb3DQEBCwUAMBExDzANBgNV
+BAMMBmJhbmRpdDAeFw0xNzEyMjgxMzIzNDBaFw0yNzEyMjYxMzIzNDBaMBExDzAN
+BgNVBAMMBmJhbmRpdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOcX
+ruVcnQUBeHJeNpSYayQExCJmcHzSCktnOnF/H4efWzxvLRWt5z4gYaKvTC9ixLrb
+K7a255GEaUbP/NVFpB/sn56uJc1ijz8u0hWQ3DwVe5ZrHUkNzAuvC2OeQgh2HanV
+5LwB1nmRZn90PG1puKxktMjXsGY7f9Yvx1/yVnZqu2Ev2uDA0RXij/T+hEqgDMI7
+y4ZFmuYD8z4b2kAUwj7RHh9LUKXKQlO+Pn8hchdR/4IK+Xc4+GFOin0XdQdUJaBD
+8quOUma424ejF5aB6QCSE82MmHlLBO2tzC9yKv8L8w+fUeQFECH1WfPC56GcAq3U
+IvgdjGrU/7EKN5XkONcCAwEAAaMNMAswCQYDVR0TBAIwADANBgkqhkiG9w0BAQsF
+AAOCAQEAnrOty7WAOpDGhuu0V8FqPoKNwFrqGuQCTeqhQ9LP0bFNhuH34pZ0JFsH
+L+Y/q4Um7+66mNJUFpMDykm51xLY2Y4oDNCzugy+fm5Q0EWKRwrq+hIM+5hs0RdC
+nARP+719ddmUiXF7r7IVP2gK+xqpa8+YcYnLuoXEtpKkrrQCCUiqabltU5yRMR77
+3wqB54txrB4IhwnXqpO23kTuRNrkG+JqDUkaVpvct+FAdT3PODMONP/oHII3SH9i
+ar/rI9k+4hjlg4NqOoduxX9M+iLJ0Zgj6HAg3EQVn4NHsgmuTgmknbhqTU3o4IwB
+XFnxdxVy0ImGYtvmnZDQCGivDok6jA==
+-----END CERTIFICATE-----
+subject=/CN=bandit
+issuer=/CN=bandit
+---
+No client certificate CA names sent
+---
+SSL handshake has read 1015 bytes and written 631 bytes
+---
+New, TLSv1/SSLv3, Cipher is AES128-SHA
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1
+    Cipher    : AES128-SHA
+    Session-ID: 10730A37D251B3CB50C62608751B4CC36277240BFE7A4A74ACD137A4B28E277D
+    Session-ID-ctx: 
+    Master-Key: 74CBF6DE85E934BA43F443A04B2053339122D5CD3BC98D78E9A763877AA504F5C7D1F38F48DC1A9CF39495777EB44572
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - 08 f0 15 a5 d6 6f a0 e8-06 d6 bb a4 0c 33 eb 04   .....o.......3..
+    0010 - 85 49 dd e8 93 69 6c 3e-8e 90 87 28 70 af 77 89   .I...il>...(p.w.
+    0020 - 8a 3d 1c f3 12 26 ce 7e-b5 ec 5a c0 1e 5a e4 3d   .=...&.~..Z..Z.=
+    0030 - 1d a4 b2 5f 56 9f 84 e1-29 a6 77 b9 d9 7e d2 ff   ..._V...).w..~..
+    0040 - a7 d3 8d 02 76 01 16 f1-46 03 10 33 ae b7 47 f9   ....v...F..3..G.
+    0050 - 3b 44 6c 73 f7 a5 14 cf-c1 dc ff 84 d4 f8 ee 9e   ;Dls............
+    0060 - 54 45 6a 15 63 b7 e5 68-a1 b7 e5 d7 37 18 79 53   TEj.c..h....7.yS
+    0070 - 56 c6 cc f5 04 4b c2 de-ad fc 48 a4 79 33 de c5   V....K....H.y3..
+    0080 - fb 37 de ba 09 5a 65 5f-41 bf ff c7 65 96 73 8b   .7...Ze_A...e.s.
+    0090 - be 6b a7 c8 08 21 11 13-8d 40 0e 1d 97 e8 6d 0e   .k...!...@....m.
+
+    Start Time: 1525818385
+    Timeout   : 300 (sec)
+    Verify return code: 18 (self signed certificate)
+---
+Correct!
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+closed
+
+bandit15@bandit:~$ ssh bandit16@localhost

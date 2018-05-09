@@ -1,0 +1,24 @@
+Video Solution: https://youtu.be/yfrk9I9Q4_E
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit13.html
+
+The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed.
+For this level it may be useful to create a directory under /tmp in which you can work using mkdir.
+For example: mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv (read the manpages!)
+
+bandit12@bandit:~$ mkdir /tmp/glicone
+bandit12@bandit:~$ cp data.txt /tmp/glicone
+bandit12@bandit:~$ cd /tmp/glicone/
+bandit12@bandit:/tmp/glicone$ xxd -r data.txt data.bin
+bandit12@bandit:/tmp/glicone$ file data.bin
+data.bin: gzip compressed data, was "data2.bin", last modified: Thu Dec 28 13:34:36 2017, max compression, from Unix
+bandit12@bandit:/tmp/glicone$ cat data.bin | zcat | bzcat | zcat | tar xO | tar xO | file -
+/dev/stdin: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/glicone$ cat data.bin | zcat | bzcat | zcat | tar xO | tar xO | bzcat | tar xO | file -
+/dev/stdin: gzip compressed data, was "data9.bin", last modified: Thu Dec 28 13:34:36 2017, max compression, from Unix
+bandit12@bandit:/tmp/glicone$ cat data.bin | zcat | bzcat | zcat | tar xO | tar xO | bzcat | tar xO | zcat | file -
+/dev/stdin: ASCII text
+bandit12@bandit:/tmp/glicone$ cat data.bin | zcat | bzcat | zcat | tar xO | tar xO | bzcat | tar xO | zcat         
+The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+bandit12@bandit:/tmp/glicone$ ssh bandit13@localhost
+
+

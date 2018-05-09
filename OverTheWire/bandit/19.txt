@@ -1,0 +1,20 @@
+Video Solution: https://youtu.be/D0ofCYITy5I
+Task on Overthewire: http://overthewire.org/wargames/bandit/bandit19.html
+
+bandit17@bandit:~$ ssh bandit18@localhost 'cat readme'
+The authenticity of host 'localhost (127.0.0.1)' can't be established.
+ECDSA key fingerprint is SHA256:98UL0ZWr85496EtCRkKlo20X3OPnyPSB5tB5RPbhczc.
+Are you sure you want to continue connecting (yes/no)? yes
+Failed to add the host to the list of known hosts (/home/bandit17/.ssh/known_hosts).
+This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0640 for '/home/bandit17/.ssh/id_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/bandit17/.ssh/id_rsa": bad permissions
+bandit18@localhost's password: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+bandit17@bandit:~$ ssh bandit19@localhost
+
