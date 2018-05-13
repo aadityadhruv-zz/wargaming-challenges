@@ -1,0 +1,8 @@
+Video Solution: https://youtu.be/py39_fcngAM
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+run brute script
+python files/natas18_brute.py
+
+You are an admin. The credentials for the next level are:<br><pre>Username: natas19
+Password: 4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs</pre><div id="viewsource"><a href="index-source.html">View sourcecode</a></div>

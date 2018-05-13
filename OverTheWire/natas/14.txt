@@ -1,0 +1,11 @@
+Video Solution: https://youtu.be/SjGXUDQ-0Jc
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+In this task you need to modify uploader.php.
+Add to start of file this magic bytes. JPEG magic bytes
+FF D8 FF DB
+You can do this with hexeditor
+Then change value to uploader.php
+Upload script, upload wso, read natas14 webpass
+
+Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1

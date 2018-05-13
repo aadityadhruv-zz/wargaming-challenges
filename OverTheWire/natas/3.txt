@@ -1,0 +1,17 @@
+Video Solution: https://youtu.be/f3Esi58k66Q
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+view-source:http://natas2.natas.labs.overthewire.org/
+
+<img src="files/pixel.png">
+
+http://natas2.natas.labs.overthewire.org/files/
+http://natas2.natas.labs.overthewire.org/files/users.txt
+
+# username:password
+alice:BYNdCesZqW
+bob:jw2ueICLvT
+charlie:G5vCxkVV3m
+natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+eve:zo4mJWyNj2
+mallory:9urtcpzBmH

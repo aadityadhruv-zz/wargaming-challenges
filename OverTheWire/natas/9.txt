@@ -1,0 +1,40 @@
+Video Solution: https://youtu.be/f3Esi58k66Q
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+http://natas8.natas.labs.overthewire.org/index-source.html
+
+<?
+
+$encodedSecret = "3d3d516343746d4d6d6c315669563362";
+
+function encodeSecret($secret) {
+    return bin2hex(strrev(base64_encode($secret)));
+}
+
+if(array_key_exists("submit", $_POST)) {
+    if(encodeSecret($_POST['secret']) == $encodedSecret) {
+    print "Access granted. The password for natas9 is <censored>";
+    } else {
+    print "Wrong secret";
+    }
+}
+?>
+
+
+Write decode script
+
+<?
+
+$encodedSecret = "3d3d516343746d4d6d6c315669563362";
+
+function encodeSecret($secret) {
+    return base64_decode(strrev(hex2bin($secret)));
+}
+
+echo encodeSecret($encodedSecret);
+?>
+
+
+oubWYf2kBq
+
+Access granted. The password for natas9 is W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl

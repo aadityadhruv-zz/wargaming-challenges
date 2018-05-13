@@ -1,0 +1,7 @@
+Video Solution: https://youtu.be/py39_fcngAM
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+run brute script
+python files/natas18_brute.py
+
+pass: xvKIqDjy4OPv7wCRgDlmj0pFsCsDjhdP

@@ -1,0 +1,12 @@
+Video Solution: https://youtu.be/f3Esi58k66Q
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+view-source:http://natas3.natas.labs.overthewire.org/
+
+<!-- No more information leaks!! Not even Google will find it this time... -->
+
+Google it
+
+http://natas3.natas.labs.overthewire.org/s3cr3t/
+http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt
+natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ

@@ -1,0 +1,7 @@
+Video Solution: https://youtu.be/f3Esi58k66Q
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+
+Ctrl+Shift+I
+
+<!--The password for natas2 is ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi -->

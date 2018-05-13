@@ -1,0 +1,26 @@
+Video Solution: https://youtu.be/f3Esi58k66Q
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+http://natas6.natas.labs.overthewire.org/index.php
+
+
+<?
+
+include "includes/secret.inc";
+
+    if(array_key_exists("submit", $_POST)) {
+        if($secret == $_POST['secret']) {
+        print "Access granted. The password for natas7 is <censored>";
+    } else {
+        print "Wrong secret";
+    }
+    }
+?>
+
+http://natas6.natas.labs.overthewire.org/includes/secret.inc
+
+<?
+$secret = "FOEIUWGHFEEUHOFUOIU";
+?>
+
+Access granted. The password for natas7 is 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9

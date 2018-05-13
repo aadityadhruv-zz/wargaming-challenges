@@ -1,0 +1,116 @@
+Video Solution: https://youtu.be/SjGXUDQ-0Jc
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+http://natas11.natas.labs.overthewire.org/index-source.html
+
+<?
+
+$defaultdata = array( "showpassword"=>"no", "bgcolor"=>"#ffffff");
+
+function xor_encrypt($in) {
+    $key = '<censored>';
+    $text = $in;
+    $outText = '';
+
+    // Iterate through each character
+    for($i=0;$i<strlen($text);$i++) {
+    $outText .= $text[$i] ^ $key[$i % strlen($key)];
+    }
+
+    return $outText;
+}
+
+function loadData($def) {
+    global $_COOKIE;
+    $mydata = $def;
+    if(array_key_exists("data", $_COOKIE)) {
+    $tempdata = json_decode(xor_encrypt(base64_decode($_COOKIE["data"])), true);
+    if(is_array($tempdata) && array_key_exists("showpassword", $tempdata) && array_key_exists("bgcolor", $tempdata)) {
+        if (preg_match('/^#(?:[a-f\d]{6})$/i', $tempdata['bgcolor'])) {
+        $mydata['showpassword'] = $tempdata['showpassword'];
+        $mydata['bgcolor'] = $tempdata['bgcolor'];
+        }
+    }
+    }
+    return $mydata;
+}
+
+function saveData($d) {
+    setcookie("data", base64_encode(xor_encrypt(json_encode($d))));
+}
+
+$data = loadData($defaultdata);
+
+if(array_key_exists("bgcolor",$_REQUEST)) {
+    if (preg_match('/^#(?:[a-f\d]{6})$/i', $_REQUEST['bgcolor'])) {
+        $data['bgcolor'] = $_REQUEST['bgcolor'];
+    }
+}
+
+saveData($data);
+
+
+
+?>
+
+
+Find the key
+
+<?
+
+$origCookie = base64_decode("ClVLIh4ASCsCBE8lAxMacFMZV2hdVVotEhhUJQNVAmhSEV4sFxFeaAw==");
+$defaultdata = array( "showpassword"=>"no", "bgcolor"=>"#ffffff");
+
+function xor_encrypt($text) {
+    $key = json_encode(array( "showpassword"=>"no", "bgcolor"=>"#ffffff"));
+    $outText = '';
+
+    // Iterate through each character
+    for($i=0;$i<strlen($text);$i++) {
+    $outText .= $text[$i] ^ $key[$i % strlen($key)];
+    }
+
+    return $outText;
+}
+
+echo xor_encrypt($origCookie);
+
+
+Result:
+qw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jq
+
+
+Now create cookie with key qw8J and "showpassword" => "yes"
+
+<?
+$origCookie = base64_decode("ClVLIh4ASCsCBE8lAxMacFMZV2hdVVotEhhUJQNVAmhSEV4sFxFeaAw==");
+$defaultdata = array( "showpassword"=>"yes", "bgcolor"=>"#ffffff");
+
+function xor_encrypt($text) {
+    $key = "qw8J";
+    $outText = '';
+
+    // Iterate through each character
+    for($i=0;$i<strlen($text);$i++) {
+    $outText .= $text[$i] ^ $key[$i % strlen($key)];
+    }
+
+    return $outText;
+}
+
+
+function saveData($d) {
+    $data = base64_encode(xor_encrypt(json_encode($d)));
+    echo $data;
+}
+
+
+saveData($defaultdata);
+
+?>
+
+Result:
+ClVLIh4ASCsCBE8lAxMacFMOXTlTWxooFhRXJh4FGnBTVF4sFxFeLFMK
+
+The password for natas12 is EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
+

@@ -1,0 +1,42 @@
+Video Solution: https://youtu.be/py39_fcngAM
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+http://natas15.natas.labs.overthewire.org/index-source.html
+
+<? 
+
+/* 
+CREATE TABLE `users` ( 
+  `username` varchar(64) DEFAULT NULL, 
+  `password` varchar(64) DEFAULT NULL 
+); 
+*/ 
+
+if(array_key_exists("username", $_REQUEST)) { 
+    $link = mysql_connect('localhost', 'natas15', '<censored>'); 
+    mysql_select_db('natas15', $link); 
+     
+    $query = "SELECT * from users where username=\"".$_REQUEST["username"]."\""; 
+    if(array_key_exists("debug", $_GET)) { 
+        echo "Executing query: $query<br>"; 
+    } 
+
+    $res = mysql_query($query, $link); 
+    if($res) { 
+    if(mysql_num_rows($res) > 0) { 
+        echo "This user exists.<br>"; 
+    } else { 
+        echo "This user doesn't exist.<br>"; 
+    } 
+    } else { 
+        echo "Error in query.<br>"; 
+    } 
+
+    mysql_close($link); 
+} else { 
+?>
+
+Run brute script
+python files/natas16_brute.py
+
+pass: WaIHEacj63wnNIBROHeqi3p9t0m5nhmh

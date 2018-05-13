@@ -1,0 +1,9 @@
+Video Solution: https://youtu.be/f3Esi58k66Q
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+http://natas5.natas.labs.overthewire.org/index.php
+Access disallowed. You are not logged in
+
+change cookie loggedin from 0 to 1
+
+Access granted. The password for natas6 is aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1

