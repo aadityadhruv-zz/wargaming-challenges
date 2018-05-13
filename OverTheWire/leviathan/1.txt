@@ -1,0 +1,27 @@
+Video Solution: https://youtu.be/G5bhfEVz2cc
+Task on OverTheWire: http://overthewire.org/wargames/leviathan
+
+leviathan1@leviathan:~$ ls
+check
+leviathan1@leviathan:~$ ./check 
+password: natheutna
+Wrong password, Good Bye ...
+leviathan1@leviathan:~$ ltrace ./check
+__libc_start_main(0x565556c0, 1, 0xffffd734, 0x565557a0 <unfinished ...>
+printf("password: ")                                                 = 10
+getchar(0xf7fc5000, 0xffffd734, 0x65766f6c, 0x646f6700password: thoeu
+)              = 116
+getchar(0xf7fc5000, 0xffffd734, 0x65766f6c, 0x646f6700)              = 104
+getchar(0xf7fc5000, 0xffffd734, 0x65766f6c, 0x646f6700)              = 111
+strcmp("tho", "sex")                                                 = 1
+puts("Wrong password, Good Bye ..."Wrong password, Good Bye ...
+)                                 = 29
++++ exited (status 0) +++
+leviathan1@leviathan:~$ ./check
+password: sex
+$ id
+uid=12002(leviathan2) gid=12001(leviathan1) groups=12001(leviathan1)
+$ bash     	
+leviathan2@leviathan:~$ cat /etc/leviathan_pass/leviathan2
+ougahZi8Ta
+leviathan2@leviathan:~$ ssh leviathan2@localhost

