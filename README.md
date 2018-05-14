@@ -175,7 +175,7 @@ Prerequisites:
 * Code - Pseudo Random Number Generator - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Cryptanalysis/Code-Pseudo-Random-Number-Generator)
 * [File - Insecure storage 1](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/cryptoanalysis/file-insecure-storage-1.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Cryptanalysis/File-Insecure-storage-1)
 * Polyalphabetic substitution - Vigenère - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Cryptanalysis/Polyalphabetic-substitution-Vigenere)
-* System - Android lock pattern - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Cryptanalysis/System-Android-lock-pattern)
+* [System - Android lock pattern](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/cryptoanalysis/System-Android-lock-pattern.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Cryptanalysis/System-Android-lock-pattern)
 * Transposition - Rail Fence - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Cryptanalysis/Transposition-Rail-Fence)
 * AES - ECB - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Cryptanalysis/AES-ECB)
 * LFSR - Known plaintext - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Cryptanalysis/LFSR-Known-plaintext)
@@ -321,7 +321,7 @@ Whereas cryptography concern the art of secret, steganography is the art of hidd
 
 * [Gunnm](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/gunnm.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Gunnm)
 * [Squared](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/Squared.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Squared-38)
-* Dot and next line - Not Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Dot-and-next-line)
+* [Dot and next line](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/dot_and_next_line.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Dot-and-next-line)
 * [Steganomobile](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/steganomobile.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Steganomobile)
 * [Twitter Secret Messages](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/twitter_secret_message.txt) -  Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Twitter-Secret-Messages)
 * [Some noise](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/RootMe/steganography/some_noise.txt) - Done [Task on root-me](https://www.root-me.org/en/Challenges/Steganography/Some-noise-40)
