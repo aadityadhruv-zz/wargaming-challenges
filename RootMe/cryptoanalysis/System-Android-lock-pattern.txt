@@ -1,0 +1,28 @@
+Video Solution: https://youtu.be/58RsxiZAenc
+Task on RootMe: https://www.root-me.org/en/Challenges/Cryptanalysis/System-Android-lock-pattern
+
+Download and decompress the given ch17.tbz2
+That will create a ’android’ directory.
+From the Linux terminal, we are searching for the gesture.key which is the file in which Android is storing the secret, and we display it as hex values.
+
+# cat find android/ -name gesture.key | xxd -ps
+2c3422d33fb9dd9cde87657408e48f4e635713cb
+
+So, now you only have to put this string in the script below as the value of hashtofind variable and run the script:
+
+Execute python the python script
+
+You will get output below:
+
+pass len tested is 1
+pass len tested is 2
+pass len tested is 3
+pass len tested is 4
+pass len tested is 5
+pass len tested is 6
+pass len tested is 7
+pass len tested is 8
+pass len tested is 9
+found for 145263780
+
+This task done by @NOP#3361 from Discord

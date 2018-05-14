@@ -1,0 +1,15 @@
+Video Solution: https://youtu.be/Mrk_c4Sd9yI
+Task on RootMe: https://www.root-me.org/en/Challenges/Web-Server/HTTP-Open-redirect
+
+http://challenge01.root-me.org/web-serveur/ch52/
+
+Click on any button and see in address bar string ?url=https://facebook.com&h=a023cfbf5f1c39bdf8407f28b60cd134
+http://challenge01.root-me.org/web-serveur/ch52/?url=https://facebook.com&h=a023cfbf5f1c39bdf8407f28b60cd134
+
+&h= hash in md5 format
+
+Go to http://www.md5.cz/ and hash your link, then add hashed link  to h parameter
+
+http://challenge01.root-me.org/web-serveur/ch52/?url=http://romaniukvadim.github.io/&h=ce032c6f7713913629fa001c00af3fb2
+
+Well done, the flag is e6f8a530811d5a479812d7b82fc1a5c5

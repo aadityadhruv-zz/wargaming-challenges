@@ -1,0 +1,6 @@
+Video Solution: https://youtu.be/58RsxiZAenc
+Task on RootMe: https://www.root-me.org/en/Challenges/Steganography/Dot-and-next-line
+
+files/journal-2.jpg explait 
+
+Flag: chatelet15h
