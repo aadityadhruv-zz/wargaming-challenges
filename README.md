@@ -575,6 +575,10 @@ Website: https://www.enigmagroup.org/pages/challenges
 * [Cryptography 2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/enigmagroup/crypto/2.txt) - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/2.php)
 * [Cryptography 3](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/enigmagroup/crypto/3.txt) - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/3.php)
 
+## Vulnhub
+
+* [Mr-Robot:1](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/vulnhub/mrrobot/mrrobot.txt)
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0 License - see the [LICENSE.md](LICENSE.md) file for details
