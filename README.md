@@ -575,10 +575,25 @@ Website: https://www.enigmagroup.org/pages/challenges
 * [Cryptography 2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/enigmagroup/crypto/2.txt) - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/2.php)
 * [Cryptography 3](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/enigmagroup/crypto/3.txt) - Done [Linuk to task](http://challenges.enigmagroup.org/cryptography/3.php)
 
-## Vulnhub
+## [Vulnhub](https://www.vulnhub.com/) 
 
 * [Mr-Robot:1](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/vulnhub/mrrobot/mrrobot.txt)
 * [Trollcave: 1.2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/vulnhub/trollcave/trollcave.txt)
+
+## [HackTheBox](https://www.hackthebox.eu/)
+
+### Misc
+
+* [0ld_is_g0ld](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/hackthebox/Misc/0ld_is_g0ld.txt)
+* [fs0ciety](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/hackthebox/Misc/fs0ciety.txt)
+
+### Crypto
+
+* [Weak RSA](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/hackthebox/Crypto/Weak_RSA.txt)
+* [SickTeacher](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/hackthebox/Crypto/SickTeacher.txt)
+* [Deceitful Batman](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/hackthebox/Crypto/Deceitful%20Batman.txt)
+* [Classic yet complicated](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/hackthebox/Crypto/classic_yet_complicated.txt)
+* [You Can Do It!](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/hackthebox/Crypto/You%20Can%20Do%20It.txt)
 
 ## License
 
