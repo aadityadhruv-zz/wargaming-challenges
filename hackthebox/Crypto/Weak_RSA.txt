@@ -1,0 +1,7 @@
+Video Solution: https://youtu.be/YdC5zjqMgB8
+https://www.hackthebox.eu/home/challenges/Crypto
+
+https://github.com/Ganapati/RsaCtfTool
+
+python RsaCtfTool.py --publickey ../../crypto/key.pub --uncipherfile ../../crypto/flag.enc
+[+] Clear text : b'HTB{s1mpl3_Wi3n3rs_4tt4ck}'

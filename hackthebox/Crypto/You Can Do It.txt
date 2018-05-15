@@ -1,0 +1,16 @@
+Video Solution: https://youtu.be/YdC5zjqMgB8
+
+https://www.hackthebox.eu/storage/challenges/crypto/you_can_do_it.zip
+
+YHAOANUTDSYOEOIEUTTC!
+
+This is anagram
+
+People in forum say that it is a anagram
+
+http://boulter.com/anagram/?letters=YHAOANUTDSYOEOIEUTTC
+
+YHAOANUTDSYOEOIEUTTC!
+YOUSEETHATYOUCANDOIT!
+
+Flag: HTB{YOUSEETHATYOUCANDOIT!}

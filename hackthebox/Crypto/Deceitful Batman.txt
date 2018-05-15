@@ -1,0 +1,16 @@
+Video Solution: https://youtu.be/YdC5zjqMgB8
+
+https://en.wikipedia.org/wiki/Bacon%27s_cipher
+
+λ  ~/crypto  cat finale.txt 
+NAANAAANNNAANAAAANANANANAAAAAAAANNAANAAANAAANANNAAAAAAAANNNAANAAAAANAANAAAA
+
+Replace N with B
+
+BAABAAABBBAABAAAABABABABAAAAAAAABBAABAAABAAABABBAAAAAAAABBBAABAAAAABAABAAAA
+
+Go to online decrypt https://mothereff.in/bacon
+
+THEFLAGISNAPIER
+
+Flag: HTB{NAPIER}

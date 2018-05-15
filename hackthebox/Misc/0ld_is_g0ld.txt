@@ -1,0 +1,31 @@
+Download zip file https://www.hackthebox.eu/storage/challenges/misc/0ld_is_g0ld.zip
+Unzip with password: hackthebox
+
+"0ld is g0ld.pdf" file was inside. Try to open, and... it's password protected pdf.
+Start dictionary attack 
+λ  ~/hackthebox  pdfcrack 0ld\ is\ g0ld.pdf -w ../Downloads/rockyou.txt
+PDF version 1.6
+Security Handler: Standard
+V: 2
+R: 3
+P: -1060
+Length: 128
+Encrypted Metadata: True
+FileID: 5c8f37d2a45eb64e9dbbf71ca3e86861
+U: 9cba5cfb1c536f1384bba7458aae3f8100000000000000000000000000000000
+O: 702cc7ced92b595274b7918dcb6dc74bedef6ef851b4b4b5b8c88732ba4dac0c
+Average Speed: 42704.7 w/s. Current Word: 'misssmith'
+Average Speed: 42283.8 w/s. Current Word: 'j632lau'
+Average Speed: 42842.1 w/s. Current Word: 'yuku@4751@singer><'
+Average Speed: 43103.3 w/s. Current Word: 't12102003'
+Average Speed: 43282.2 w/s. Current Word: 'rezchica8'
+Average Speed: 43511.3 w/s. Current Word: 'neftalyaviles'
+Average Speed: 43460.9 w/s. Current Word: 'lr091929'
+found user-password: 'jumanji69'
+
+Now we can open pdf. Inside text Remember Me? Photo of Morze, and text with morze cipher on the bottom.
+.-. .---- .--. ... .- -- ..- ...-- .-.. -- ----- .-. ... ...--
+Decode this with online calculator
+R1PSAMU3LM0RS3
+
+Flag: HTB{R1PSAMU3LM0RS3}
