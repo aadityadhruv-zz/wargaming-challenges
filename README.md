@@ -1,6 +1,7 @@
 # Wargaming Challenges
 
 Wargaming write-ups and scripts. Root-Me()
+Youtube: https://www.youtube.com/c/glicOne
 
 ## Authors
 
