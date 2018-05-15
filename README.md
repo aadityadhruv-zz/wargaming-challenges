@@ -578,6 +578,7 @@ Website: https://www.enigmagroup.org/pages/challenges
 ## Vulnhub
 
 * [Mr-Robot:1](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/vulnhub/mrrobot/mrrobot.txt)
+* [Trollcave: 1.2](https://github.com/RomaniukVadim/wargaming-challenges/blob/master/vulnhub/trollcave/trollcave.txt)
 
 ## License
 
